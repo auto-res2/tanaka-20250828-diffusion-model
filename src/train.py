@@ -358,7 +358,9 @@ class R2DiffToken(nn.Module):
     def forward_recurrent(self, x_t, cond_emb, q, sc, zp):
         B,_,H,W = x_t.shape
         t2 = self._dequant_tok(q, sc.to(x_t.device), zp.to(x_t.device))
-        delta = self.delta(t2, cond_emb) * self.gate(cond_emb).view(B,1)
+        # Gate is per-batch scalar; reshape to broadcast over (B, N, C)
+        g = self.gate(cond_emb).squeeze(-1)  # (B, 1, 1)
+        delta = self.delta(t2, cond_emb) * g
         t2_new = (t2 + delta)
         q2, sc2, zp2 = self._quant_tok(t2_new)
         out = self.head(t2_new).reshape(B, H//self.patch, W//self.patch, self.patch, self.patch)

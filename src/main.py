@@ -16,7 +16,7 @@ def run_from_config(cfg_path: str = DEFAULT_CONFIG_PATH):
     with open(cfg_path, 'r') as f:
         cfg = yaml.safe_load(f)
 
-    out_base = cfg.get('output_base_dir', '.research/iteration3/images')
+    out_base = cfg.get('output_base_dir', '.research/iteration4/images')
     ensure_dir(out_base)
 
     quick = bool(cfg.get('quick', True))
