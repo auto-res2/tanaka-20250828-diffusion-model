@@ -5,9 +5,7 @@ seaborn
 scikit-learn
 PyYAML
 pynvml
-dvcore
 iopath
 yacs
 tabulate
 termcolor
-
