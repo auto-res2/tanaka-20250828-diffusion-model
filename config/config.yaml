@@ -1,0 +1,14 @@
+# RevLoRA-Diffusion toy experiments configuration
+mode: quick  # options: quick, full
+
+paths:
+  images_dir: .research/iteration1/images
+  models_dir: models
+
+# For mode==full, toggle experiments individually
+experiments:
+  exp1: true
+  exp2: true
+  exp3: true
+
+evaluate: true

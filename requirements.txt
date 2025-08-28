@@ -1,1 +1,5 @@
-# Please list the required python packages.
+torch
+numpy
+matplotlib
+seaborn
+pyyaml
