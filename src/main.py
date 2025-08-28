@@ -7,7 +7,7 @@ from .preprocess import ensure_dir
 from .evaluate import experiment1, experiment2, experiment3
 
 
-DEFAULT_CONFIG_PATH = os.path.join('config', 'experiment.yaml')
+DEFAULT_CONFIG_PATH = os.path.join('config', 'config.yaml')
 
 
 def run_from_config(cfg_path: str = DEFAULT_CONFIG_PATH):
@@ -16,7 +16,7 @@ def run_from_config(cfg_path: str = DEFAULT_CONFIG_PATH):
     with open(cfg_path, 'r') as f:
         cfg = yaml.safe_load(f)
 
-    out_base = cfg.get('output_base_dir', '.research/iteration1/images')
+    out_base = cfg.get('output_base_dir', '.research/iteration2/images')
     ensure_dir(out_base)
 
     quick = bool(cfg.get('quick', True))

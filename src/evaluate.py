@@ -32,7 +32,7 @@ except Exception:
 from .preprocess import (
     ensure_dir, set_seed, get_device,
     make_linear_schedule, create_dataloaders, make_canonical_set,
-    SinusoidalTimeEmbedding, GlobalCondMLP,
+    SinusoidalTimeEmbedding, GlobalCondMLP, DiffusionSchedule,
     q_sample, ddim_step, ddpm_step, dpmpp_heun_step,
 )
 from .train import (
@@ -255,7 +255,7 @@ def sample_images_r2(model_r2: R2DiffUNet, cond_mlp: GlobalCondMLP, t_embed: Sin
             x,
             lambda xx, tt, cc: model_r2.decoder(
                 xx,
-                [model_r2.encoder_recur._dequant(fq, sc.to(device), zp.to(device)) for fq,sc,zp in zip(feats_q, scales, zps)],
+                [model_r2.encoder_recur._dequant(fq, sc.to(device), zp.to(device)) for fq, sc, zp in zip(feats_q, scales, zps)],
                 cc
             ),
             t_indices[0], t_prev, sched, cond_emb
@@ -278,7 +278,7 @@ def sample_images_r2(model_r2: R2DiffUNet, cond_mlp: GlobalCondMLP, t_embed: Sin
                 x,
                 lambda xx, tt, cc: model_r2.decoder(
                     xx,
-                    [model_r2.encoder_recur._dequant(fq, sc.to(device), zp.to(device)) for fq,sc,zp in zip(feats_q, scales, zps)],
+                    [model_r2.encoder_recur._dequant(fq, sc.to(device), zp.to(device)) for fq, sc, zp in zip(feats_q, scales, zps)],
                     cc
                 ),
                 t_idx, t_prev, sched, cond_emb
