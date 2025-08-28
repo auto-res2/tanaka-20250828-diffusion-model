@@ -1,0 +1,58 @@
+/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py:471: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=(autocast_dtype is not None), dtype=autocast_dtype):
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 46, in <module>
+    main()
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 31, in main
+    quick_test(images_dir=images_dir, models_dir=models_dir)
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 829, in quick_test
+    res1 = run_experiment_1(images_dir=images_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 543, in run_experiment_1
+    loss, logs = diffusion_step(model, batch,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 472, in diffusion_step
+    pred = student(noisy, offloader=offloader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 334, in forward
+    h = block(h)
+        ^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 211, in forward
+    return x + self.conv2(self.conv1(x))
+                          ^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 202, in forward
+    return self.act(self.gn(self.conv(x)))
+                            ^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [64, 64, 3, 3], expected input[2, 32, 32, 32] to have 64 channels, but got 32 channels instead
