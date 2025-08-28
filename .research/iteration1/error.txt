@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 46, in <module>
+    main()
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 18, in main
+    with open(args.config, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config/revlora_toy.yaml'
