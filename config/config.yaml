@@ -1,0 +1,3 @@
+# Default config for quick synthetic ASTME experiments
+fast: true
+output_dir: .research/iteration1/images
