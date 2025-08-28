@@ -1,0 +1,3680 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file paper.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 40.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 1 undefined on inp
+ut line 45.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 1 undefined 
+on input line 45.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 1 undefined on input
+ line 45.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 1 undefined on in
+put line 45.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 1 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 1 undefined on inpu
+t line 45.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 1 undefined on inpu
+t line 45.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 1 undefined on input
+ line 45.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 1 undefined 
+on input line 45.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 1 undefined on input li
+ne 45.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 1 undefined on in
+put line 45.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 1 undefined on inp
+ut line 49.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 1 undefined 
+on input line 49.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 1 undefined on inpu
+t line 49.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 1 undefined on inpu
+t line 49.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 1 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 1 undefined 
+on input line 49.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 1 undefined on input li
+ne 49.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 1 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 1 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 1 undefined on 
+input line 49.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 1 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 1 undefined on 
+input line 51.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 1 undefined on in
+put line 51.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 2 undefined on inp
+ut line 53.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 2 undefined 
+on input line 53.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 2 undefined on input
+ line 53.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 2 undefined on in
+put line 53.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 53.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 53.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 53.
+
+
+Package natbib Warning: Citation `chen-2024-edt' on page 2 undefined on input l
+ine 53.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 2 undefined o
+n input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+
+Package natbib Warning: Citation `wang-2023-patch' on page 2 undefined on input
+ line 59.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 2 undefined on 
+input line 59.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 59.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
+t line 59.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 59.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 59.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 59.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 62.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 62.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 62.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
+t line 66.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 66.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 2 undefined on input
+ line 66.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 66.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 66.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 2 undefined on input
+ line 69.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 2 undefined on in
+put line 69.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 2 undefined on 
+input line 69.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 69.
+
+[2]
+
+Package natbib Warning: Citation `chen-2024-edt' on page 3 undefined on input l
+ine 72.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 72.
+
+
+Package natbib Warning: Citation `jabri-2022-scalable' on page 3 undefined on i
+nput line 72.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 3 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 3 undefined 
+on input line 75.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 3 undefined o
+n input line 75.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 3 undefined on inpu
+t line 78.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 3 undefined on inpu
+t line 78.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 3 undefined on input
+ line 78.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 3 undefined 
+on input line 78.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 3 undefined on input li
+ne 78.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 3 undefined on input
+ line 78.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 3 undefined on in
+put line 78.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 3 undefined on 
+input line 78.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 78.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 3 undefined on inp
+ut line 81.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 3 undefined 
+on input line 81.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 3 undefined on 
+input line 87.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 87.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 3 undefined on inp
+ut line 90.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 3 undefined 
+on input line 90.
+
+[3]
+
+Package natbib Warning: Citation `wang-2023-patch' on page 4 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 4 undefined on in
+put line 93.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 4 undefined on 
+input line 93.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 4 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 4 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 4 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 4 undefined 
+on input line 93.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 4 undefined on input li
+ne 93.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 4 undefined on inp
+ut line 103.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 4 undefined 
+on input line 103.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 4 undefined on 
+input line 109.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 4 undefined on in
+put line 109.
+
+[4]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 5 undefined on inp
+ut line 115.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 5 undefined 
+on input line 115.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 5 undefined on inpu
+t line 118.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 5 undefined on inpu
+t line 118.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 5 undefined on input
+ line 156.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 5 undefined on 
+input line 156.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 5 undefined on in
+put line 156.
+
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      ]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 6 undefined on inp
+ut line 159.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 6 undefined 
+on input line 159.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 6 undefined on inpu
+t line 174.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 6 undefined on inpu
+t line 174.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 6 undefined on input
+ line 174.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 6 undefined 
+on input line 174.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 6 undefined on input li
+ne 174.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 6 undefined on input
+ line 174.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 6 undefined on in
+put line 174.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 6 undefined on 
+input line 174.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 6 undefined on in
+put line 174.
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 179.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active [8 <./imag
+es/exp1/training_loss_astme.pdf> <./images/exp1/training_loss_baseline.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/exp1/pflops_vs_step_astme.pdf> <./images/exp1/pflops_vs_step_baseline.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [10 <./ima
+ges/exp1/active_experts_astme.pdf> <./images/exp2/pflops_ablation.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [11 <./ima
+ges/exp2/final_loss_ablation.pdf> <./images/exp2/expert_timestep_heatmap_astme.
+pdf>]
+
+Package natbib Warning: Citation `wang-2023-patch' on page 12 undefined on inpu
+t line 265.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 12 undefined on
+ input line 265.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 12 undefined on i
+nput line 265.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 12 undefined on inp
+ut line 265.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 12 undefined on inp
+ut line 265.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 12 undefined
+ on input line 265.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 12 undefined on input l
+ine 265.
+
+[12 <./images/exp3/loss_vs_noise_astme.pdf> <./images/exp3/router_switch_rate_a
+stme.pdf>]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 13 undefined on in
+put line 267.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 13 undefined
+ on input line 267.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 13 undefined 
+on input line 267.
+
+No file paper.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[13] (./paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+)
+kpathsea: Running mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 ectt1000
+mktexpk: Running mf-nowin -progname=mf \mode:=ljfour; mag:=1+0/600; nonstopmode; input ectt1000
+This is METAFONT, Version 2.71828182 (TeX Live 2023/Debian) (preloaded base=mf)
+
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ectt1000.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbase.mf)
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ectt.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exroman.mf
+ Ok (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccess.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/expseudo.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exruwest.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrlwest.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrueast.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrleast.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbraces.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/expunct.mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccent.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exsign.mf
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrlig.mf
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exromp.mf
+ Ok [38] [63] [190])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrulett.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrllett.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrdigit.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exmligtb.mf
+ Ok) ) ) )
+Font metrics written on ectt1000.tfm.
+Output written on ectt1000.600gf (256 characters, 43832 bytes).
+Transcript written on ectt1000.log.
+mktexpk: /home/runner/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk: successfully generated.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+[]\T1/ptm/m/n/10 (+20) _loss_astme18Training loss over steps for AST-MEfig-ure.
+caption.2
+
+Underfull \hbox (badness 4378) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) PFLOPs vs. step for AST-MEfig-ure.caption.4 _pflops_astme@
+cref[figure][3][]3[1][8][]9
+
+Underfull \hbox (badness 2418) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _pflops_baseline49Accumulated PFLOPs vs. step for the dens
+e base-line-fig-ure.caption.5
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _pflops_baseline@cref[figure][4][]4[1][9][]9  _ac-tive_exp
+erts510Average ac-tive ex-perts
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) per to-ken dur-ing train-ing-fig-ure.caption.6 _ac-tive_ex
+perts@cref[figure][5][]5[1][9][]10
+
+Underfull \hbox (badness 5008) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _pflops_ablation610Ablation re-sults: PFLOPs com-par-i-son
+ across vari-ants-fig-ure.caption.7
+
+Underfull \hbox (badness 3199) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _pflops_ablation@cref[figure][6][]6[1][10][]10  _fi-nal_lo
+ss_ablation711Ablation re-sults: fi-
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) nal loss across vari-ants-fig-ure.caption.8 _fi-nal_loss_a
+blation@cref[figure][7][]7[1][10][]11
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _heatmap_astme811Expert-timestep ac-ti-va-tion heatmap for
+ AST-MEfig-ure.caption.9
+
+Underfull \hbox (badness 4168) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _heatmap_astme@cref[figure][8][]8[1][11][]11    _loss_vs_n
+oise912Robustness: loss vs.
+
+Underfull \hbox (badness 6859) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) label-noise rate for AST-MEfig-ure.caption.10 _loss_vs_noi
+se@cref[figure][9][]9[1][11][]12
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--273
+\T1/ptm/m/n/10 (+20) _switch_rate1012Robustness: router switch rate vs. noise-f
+ig-ure.caption.11
+ )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (13 pages, 250390 bytes).
+Transcript written on paper.log.
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+The top-level auxiliary file: paper.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--to sort, need author or key in author-year-leveraging
+Warning--empty author in author-year-leveraging
+Warning--empty journal in author-year-leveraging
+Warning--empty year in author-year-leveraging
+Warning--empty year in author-year-leveraging
+Warning--empty journal in chen-2024-edt
+Warning--empty journal in ho-2020-denoising
+Warning--empty journal in jabri-2022-scalable
+Warning--empty journal in karras-2022-elucidating
+Warning--empty journal in ma-2024-learning
+Warning--empty journal in moon-2024-simple
+Warning--empty journal in phung-2022-wavelet
+Warning--empty journal in salimans-2024-multistep
+Warning--empty journal in shang-2022-post
+Warning--empty journal in wang-2023-patch
+Warning--empty journal in yao-2024-fasterdit
+Warning--empty journal in zhang-2023-improving
+(There were 17 warnings)
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][7][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_baseline' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_baseline@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][8][]8}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_astme' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ..._astme@cref}{{[figure][3][]3}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_baseline' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_baseline@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...seline@cref}{{[figure][4][]4}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_active\_experts' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_active\_experts@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...perts@cref}{{[figure][5][]5}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_pflops\_ablation@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_final\_loss\_ablation' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_final\_loss\_ablation@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_heatmap\_astme' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_heatmap\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_loss\_vs\_noise@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_switch\_rate' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_switch\_rate@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][12][]12}}
+                                                  
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--40
+[]\T1/ptm/m/n/10 _loss_astme@cref  _loss_baseline _loss_baseline@cref  _pflops_
+astme _pflops_astme@cref
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--40
+\T1/ptm/m/n/10 _fi-nal_loss_ablation _fi-nal_loss_ablation@cref  _heatmap_astme
+ _heatmap_astme@cref
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.40 \begin{document}
+                     
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.40 \begin{document}
+                     
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 40.
+
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 2 undefined on inp
+ut line 45.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 2 undefined 
+on input line 45.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 2 undefined on input
+ line 45.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 2 undefined on in
+put line 45.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 2 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
+t line 45.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 45.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 2 undefined on input
+ line 45.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 45.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 45.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 45.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 2 undefined on inp
+ut line 49.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 2 undefined 
+on input line 49.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
+t line 49.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
+t line 49.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 2 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
+on input line 49.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 2 undefined on input li
+ne 49.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 2 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 2 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 2 undefined on 
+input line 49.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 49.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 2 undefined on 
+input line 51.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 2 undefined on in
+put line 51.
+
+[2]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 3 undefined on inp
+ut line 53.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 3 undefined 
+on input line 53.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 3 undefined on input
+ line 53.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 3 undefined on in
+put line 53.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 3 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 3 undefined on inpu
+t line 53.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 3 undefined 
+on input line 53.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 3 undefined on input li
+ne 53.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 53.
+
+
+Package natbib Warning: Citation `chen-2024-edt' on page 3 undefined on input l
+ine 53.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 3 undefined o
+n input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+
+Package natbib Warning: Citation `wang-2023-patch' on page 3 undefined on input
+ line 59.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 3 undefined on 
+input line 59.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 59.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 3 undefined on inpu
+t line 59.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 3 undefined on inpu
+t line 59.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 3 undefined 
+on input line 59.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 3 undefined on input li
+ne 59.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 3 undefined 
+on input line 62.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 3 undefined on input li
+ne 62.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 3 undefined on inpu
+t line 62.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 3 undefined on inpu
+t line 66.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 3 undefined on inpu
+t line 66.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 3 undefined on input
+ line 66.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 3 undefined 
+on input line 66.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 3 undefined on input li
+ne 66.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 3 undefined on input
+ line 69.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 3 undefined on in
+put line 69.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 3 undefined on 
+input line 69.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 3 undefined on in
+put line 69.
+
+[3]
+
+Package natbib Warning: Citation `chen-2024-edt' on page 4 undefined on input l
+ine 72.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 4 undefined on in
+put line 72.
+
+
+Package natbib Warning: Citation `jabri-2022-scalable' on page 4 undefined on i
+nput line 72.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 4 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 4 undefined 
+on input line 75.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 4 undefined o
+n input line 75.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 4 undefined on inpu
+t line 78.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 4 undefined on inpu
+t line 78.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 4 undefined on input
+ line 78.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 4 undefined 
+on input line 78.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 4 undefined on input li
+ne 78.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 4 undefined on input
+ line 78.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 4 undefined on in
+put line 78.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 4 undefined on 
+input line 78.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 4 undefined on in
+put line 78.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 4 undefined on inp
+ut line 81.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 4 undefined 
+on input line 81.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 4 undefined on 
+input line 87.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 4 undefined on in
+put line 87.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 4 undefined on inp
+ut line 90.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 4 undefined 
+on input line 90.
+
+[4]
+
+Package natbib Warning: Citation `wang-2023-patch' on page 5 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 5 undefined on in
+put line 93.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 5 undefined on 
+input line 93.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 5 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 5 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 5 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 5 undefined 
+on input line 93.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 5 undefined on input li
+ne 93.
+
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 5 undefined on inp
+ut line 103.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 5 undefined 
+on input line 103.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 5 undefined on 
+input line 109.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 5 undefined on in
+put line 109.
+
+[5]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 6 undefined on inp
+ut line 115.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 6 undefined 
+on input line 115.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 6 undefined on inpu
+t line 118.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 6 undefined on inpu
+t line 118.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 6 undefined on input
+ line 156.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 6 undefined on 
+input line 156.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 6 undefined on in
+put line 156.
+
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 
+      ]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 7 undefined on inp
+ut line 159.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 7 undefined 
+on input line 159.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 7 undefined on inpu
+t line 174.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 7 undefined on inpu
+t line 174.
+
+
+Package natbib Warning: Citation `shang-2022-post' on page 7 undefined on input
+ line 174.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 7 undefined 
+on input line 174.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 7 undefined on input li
+ne 174.
+
+
+Package natbib Warning: Citation `wang-2023-patch' on page 7 undefined on input
+ line 174.
+
+
+Package natbib Warning: Citation `phung-2022-wavelet' on page 7 undefined on in
+put line 174.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 7 undefined on 
+input line 174.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 7 undefined on in
+put line 174.
+
+[7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 179.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/exp1/training_loss_astme.pdf> <./images/exp1/training_loss_baseline.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [10 <./ima
+ges/exp1/pflops_vs_step_astme.pdf> <./images/exp1/pflops_vs_step_baseline.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active [11 <./ima
+ges/exp1/active_experts_astme.pdf> <./images/exp2/pflops_ablation.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [12 <./ima
+ges/exp2/final_loss_ablation.pdf> <./images/exp2/expert_timestep_heatmap_astme.
+pdf>]
+
+Package natbib Warning: Citation `wang-2023-patch' on page 13 undefined on inpu
+t line 265.
+
+
+Package natbib Warning: Citation `zhang-2023-improving' on page 13 undefined on
+ input line 265.
+
+
+Package natbib Warning: Citation `yao-2024-fasterdit' on page 13 undefined on i
+nput line 265.
+
+
+Package natbib Warning: Citation `ma-2024-learning' on page 13 undefined on inp
+ut line 265.
+
+
+Package natbib Warning: Citation `moon-2024-simple' on page 13 undefined on inp
+ut line 265.
+
+
+Package natbib Warning: Citation `salimans-2024-multistep' on page 13 undefined
+ on input line 265.
+
+
+Package natbib Warning: Citation `yin-2023-one' on page 13 undefined on input l
+ine 265.
+
+[13 <./images/exp3/loss_vs_noise_astme.pdf> <./images/exp3/router_switch_rate_a
+stme.pdf>]
+
+Package natbib Warning: Citation `ho-2020-denoising' on page 14 undefined on in
+put line 267.
+
+
+Package natbib Warning: Citation `karras-2022-elucidating' on page 14 undefined
+ on input line 267.
+
+
+Package natbib Warning: Citation `author-year-leveraging' on page 14 undefined 
+on input line 267.
+
+(./paper.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[14] (./paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (14 pages, 268107 bytes).
+Transcript written on paper.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_baseline' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_loss\_baseline@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_astme' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_baseline' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_pflops\_baseline@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_active\_experts' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+
+LaTeX Warning: Label `fig:exp1\_active\_experts@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_pflops\_ablation@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_final\_loss\_ablation' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_final\_loss\_ablation@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_heatmap\_astme' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+
+LaTeX Warning: Label `fig:exp2\_heatmap\_astme@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_loss\_vs\_noise@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_switch\_rate' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+
+LaTeX Warning: Label `fig:exp3\_switch\_rate@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--40
+[]\T1/ptm/m/n/10 _loss_astme@cref  _loss_baseline _loss_baseline@cref  _pflops_
+astme _pflops_astme@cref
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--40
+\T1/ptm/m/n/10 _fi-nal_loss_ablation _fi-nal_loss_ablation@cref  _heatmap_astme
+ _heatmap_astme@cref
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.40 \begin{document}
+                     
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.40 \begin{document}
+                     
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 40.
+
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd) [2]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [3]
+Underfull \vbox (badness 1264) has occurred while \output is active [4]
+[5] [6] [7
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 179.
+
+
+Underfull \vbox (badness 2846) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/exp1/training_loss_astme.pdf> <./images/exp1/training_loss_baseline.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [10 <./ima
+ges/exp1/pflops_vs_step_astme.pdf> <./images/exp1/pflops_vs_step_baseline.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active [11 <./ima
+ges/exp1/active_experts_astme.pdf> <./images/exp2/pflops_ablation.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [12 <./ima
+ges/exp2/final_loss_ablation.pdf> <./images/exp2/expert_timestep_heatmap_astme.
+pdf>] [13 <./images/exp3/loss_vs_noise_astme.pdf> <./images/exp3/router_switch_
+rate_astme.pdf>] (./paper.bbl) [14] (./paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...over steps for ASTME}{figure.caption.2}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...\_astme@cref}{{[figure][1][]1}{[1][8][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.97 ...r the dense baseline}{figure.caption.3}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.98 ...aseline@cref}{{[figure][2][]2}{[1][9][]9}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.100 ... vs. step for ASTME}{figure.caption.4}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.101 ...astme@cref}{{[figure][3][]3}{[1][9][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.103 ... the dense baseline}{figure.caption.5}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.104 ...line@cref}{{[figure][4][]4}{[1][10][]10}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.106 ...ken during training}{figure.caption.6}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.107 ...erts@cref}{{[figure][5][]5}{[1][10][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.109 ...son across variants}{figure.caption.7}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.110 ...tion@cref}{{[figure][6][]6}{[1][11][]11}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.112 ...oss across variants}{figure.caption.8}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.113 ...tion@cref}{{[figure][7][]7}{[1][11][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...n heatmap for ASTME}{figure.caption.9}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.116 ...stme@cref}{{[figure][8][]8}{[1][12][]12}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...ise rate for ASTME}{figure.caption.10}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.121 ...oise@cref}{{[figure][9][]9}{[1][12][]13}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.123 ...tch rate vs. noise}{figure.caption.11}{}}
+                                                  
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.124 ...te@cref}{{[figure][10][]10}{[1][13][]13}}
+                                                  
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (14 pages, 276980 bytes).
+Transcript written on paper.log.
