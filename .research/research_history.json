@@ -1,0 +1,10 @@
+{
+  "research_topic": "diffusion modelのメモリを抑えた学習方法",
+  "queries": [
+    "memory efficient diffusion",
+    "gradient checkpoint diffusion",
+    "diffusion model checkpointing",
+    "low memory diffusion",
+    "compressed diffusion training"
+  ]
+}
