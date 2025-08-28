@@ -5,7 +5,7 @@ seaborn
 scikit-learn
 PyYAML
 pynvml
-fvcore
+dvcore
 iopath
 yacs
 tabulate
