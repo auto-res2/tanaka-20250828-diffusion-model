@@ -3,4 +3,4 @@
 
 experiments: [1, 2, 3]
 quick: true
-output_base_dir: .research/iteration2/images
+output_base_dir: .research/iteration3/images

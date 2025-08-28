@@ -520,7 +520,7 @@ def experiment3(output_dir: str, quick: bool = True):
         flops = float('nan')
         if _HAS_FVCORE:
             try:
-                h = torch.randn(1,16,32,32, device=device).half()
+                h = torch.randn(1,16,32,32, device=device)
                 cond_emb = torch.randn(1,128, device=device)
                 fca = FlopCountAnalysis(r2.encoder_recur.delta_blocks[0], (h, cond_emb))
                 flops = float(fca.total())

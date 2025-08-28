@@ -28,6 +28,7 @@ class ConvBlock(nn.Module):
             nn.Linear(d_embed, 2*out_ch), nn.SiLU(), nn.Linear(2*out_ch, 2*out_ch)
         )
 
+        
     def forward(self, x, cond_emb):
         x = self.conv1(x)
         x = self.norm1(x)
@@ -212,15 +213,15 @@ class R2DiffEncoder(nn.Module):
         elif self.quant_mode == 'int4':
             return PerChannelUint4.quantize(h)
         else:
-            return h.half(), torch.tensor([], device=h.device), torch.tensor([], device=h.device)
+            return h.float(), torch.tensor([], device=h.device), torch.tensor([], device=h.device)
 
     def _dequant(self, q, sc, zp):
         if self.quant_mode == 'int8':
-            return PerChannelUint8.dequantize(q, sc, zp).half()
+            return PerChannelUint8.dequantize(q, sc, zp).float()
         elif self.quant_mode == 'int4':
-            return PerChannelUint4.dequantize(q, sc, zp).half()
+            return PerChannelUint4.dequantize(q, sc, zp).float()
         else:
-            return q
+            return q.float()
 
     def quantize_feats(self, feats: List[torch.Tensor]):
         feats_q, scales, zps = [], [], []
@@ -335,13 +336,13 @@ class R2DiffToken(nn.Module):
             q = (x / scale[:,None,:] - zp[:,None,:]).round().clamp(0,15).to(torch.uint8)
             return q, scale, zp
         else:
-            return x.half(), torch.tensor([], device=x.device), torch.tensor([], device=x.device)
+            return x.float(), torch.tensor([], device=x.device), torch.tensor([], device=x.device)
 
     def _dequant_tok(self, q, sc, zp):
         if self.quant_mode in ['int8','int4']:
             return (q.float() + zp[:,None,:]) * sc[:,None,:]
         else:
-            return q
+            return q.float()
 
     def forward_first(self, x_t, cond_emb):
         B,_,H,W = x_t.shape
