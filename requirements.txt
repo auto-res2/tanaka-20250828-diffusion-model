@@ -1,1 +1,12 @@
-# Please list the required python packages.
+torch
+numpy
+matplotlib
+seaborn
+scikit-learn
+PyYAML
+pynvml
+fvcore
+iopath
+yacs
+tabulate
+termcolor

@@ -1,0 +1,6 @@
+# Configuration for running R2Diff minimal experiments
+# Run from project root with: python -m src.main
+
+experiments: [1, 2, 3]
+quick: true
+output_base_dir: .research/iteration1/images
