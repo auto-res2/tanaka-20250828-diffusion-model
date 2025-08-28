@@ -5,3 +5,634 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{anciukeviius-2024-denoising,
+ abstract = {Generating 3D scenes is a challenging open problem, which requires
+synthesizing plausible content that is fully consistent in 3D space. While
+recent methods such as neural radiance fields excel at view synthesis and 3D
+reconstruction, they cannot synthesize plausible details in unobserved regions
+since they lack a generative capability. Conversely, existing generative
+methods are typically not capable of reconstructing detailed, large-scale
+scenes in the wild, as they use limited-capacity 3D scene representations,
+require aligned camera poses, or rely on additional regularizers. In this work,
+we introduce the first diffusion model able to perform fast, detailed
+reconstruction and generation of real-world 3D scenes. To achieve this, we make
+three contributions. First, we introduce a new neural scene representation,
+IB-planes, that can efficiently and accurately represent large 3D scenes,
+dynamically allocating more capacity as needed to capture details visible in
+each image. Second, we propose a denoising-diffusion framework to learn a prior
+over this novel 3D scene representation, using only 2D images without the need
+for any additional supervision signal such as masks or depths. This supports 3D
+reconstruction and generation in a unified architecture. Third, we develop a
+principled approach to avoid trivial 3D solutions when integrating the
+image-based rendering with the diffusion model, by dropping out representations
+of some images. We evaluate the model on several challenging datasets of real
+and synthetic images, and demonstrate superior results on generation, novel
+view synthesis and 3D reconstruction.},
+ arxiv_url = {https://arxiv.org/pdf/2402.03445v2.pdf},
+ author = {Titas Anciukevičius and Fabian Manhardt and Federico Tombari and Paul Henderson},
+ title = {Denoising Diffusion via Image-Based Rendering},
+ year = {2024}
+}
+
+@article{author-year-leveraging,
+ title = {Leveraging Early-Stage Robustness in Diffusion Models for Efficient and High-Quality Image Synthesis}
+}
+
+@article{huang-2024-reverse,
+ abstract = {To generate data from trained diffusion models, most inference algorithms,
+such as DDPM, DDIM, and other variants, rely on discretizing the reverse SDEs
+or their equivalent ODEs. In this paper, we view such approaches as decomposing
+the entire denoising diffusion process into several segments, each
+corresponding to a reverse transition kernel (RTK) sampling subproblem.
+Specifically, DDPM uses a Gaussian approximation for the RTK, resulting in low
+per-subproblem complexity but requiring a large number of segments (i.e.,
+subproblems), which is conjectured to be inefficient. To address this, we
+develop a general RTK framework that enables a more balanced subproblem
+decomposition, resulting in $\tilde O(1)$ subproblems, each with strongly
+log-concave targets. We then propose leveraging two fast sampling algorithms,
+the Metropolis-Adjusted Langevin Algorithm (MALA) and Underdamped Langevin
+Dynamics (ULD), for solving these strongly log-concave subproblems. This gives
+rise to the RTK-MALA and RTK-ULD algorithms for diffusion inference. In theory,
+we further develop the convergence guarantees for RTK-MALA and RTK-ULD in total
+variation (TV) distance: RTK-ULD can achieve $\epsilon$ target error within
+$\tilde{\mathcal O}(d^{1/2}\epsilon^{-1})$ under mild conditions, and RTK-MALA
+enjoys a $\mathcal{O}(d^{2}\log(d/\epsilon))$ convergence rate under slightly
+stricter conditions. These theoretical results surpass the state-of-the-art
+convergence rates for diffusion inference and are well supported by numerical
+experiments.},
+ arxiv_url = {https://arxiv.org/pdf/2405.16387v1.pdf},
+ author = {Xunpeng Huang and Difan Zou and Hanze Dong and Yi Zhang and Yi-An Ma and Tong Zhang},
+ title = {Reverse Transition Kernel: A Flexible Framework to Accelerate Diffusion Inference},
+ year = {2024}
+}
+
+@article{karras-2023-analyzing,
+ abstract = {Diffusion models currently dominate the field of data-driven image synthesis
+with their unparalleled scaling to large datasets. In this paper, we identify
+and rectify several causes for uneven and ineffective training in the popular
+ADM diffusion model architecture, without altering its high-level structure.
+Observing uncontrolled magnitude changes and imbalances in both the network
+activations and weights over the course of training, we redesign the network
+layers to preserve activation, weight, and update magnitudes on expectation. We
+find that systematic application of this philosophy eliminates the observed
+drifts and imbalances, resulting in considerably better networks at equal
+computational complexity. Our modifications improve the previous record FID of
+2.41 in ImageNet-512 synthesis to 1.81, achieved using fast deterministic
+sampling.
+  As an independent contribution, we present a method for setting the
+exponential moving average (EMA) parameters post-hoc, i.e., after completing
+the training run. This allows precise tuning of EMA length without the cost of
+performing several training runs, and reveals its surprising interactions with
+network architecture, training time, and guidance.},
+ arxiv_url = {https://arxiv.org/pdf/2312.02696v2.pdf},
+ author = {Tero Karras and Miika Aittala and Jaakko Lehtinen and Janne Hellsten and Timo Aila and Samuli Laine},
+ github_url = {https://github.com/NVlabs/edm},
+ title = {Analyzing and Improving the Training Dynamics of Diffusion Models},
+ year = {2023}
+}
+
+@article{li-2023-faster,
+ abstract = {One of the main drawback of diffusion models is the slow inference time for
+image generation. Among the most successful approaches to addressing this
+problem are distillation methods. However, these methods require considerable
+computational resources. In this paper, we take another approach to diffusion
+model acceleration. We conduct a comprehensive study of the UNet encoder and
+empirically analyze the encoder features. This provides insights regarding
+their changes during the inference process. In particular, we find that encoder
+features change minimally, whereas the decoder features exhibit substantial
+variations across different time-steps. This insight motivates us to omit
+encoder computation at certain adjacent time-steps and reuse encoder features
+of previous time-steps as input to the decoder in multiple time-steps.
+Importantly, this allows us to perform decoder computation in parallel, further
+accelerating the denoising process. Additionally, we introduce a prior noise
+injection method to improve the texture details in the generated image. Besides
+the standard text-to-image task, we also validate our approach on other tasks:
+text-to-video, personalized generation and reference-guided generation. Without
+utilizing any knowledge distillation technique, our approach accelerates both
+the Stable Diffusion (SD) and DeepFloyd-IF model sampling by 41$\%$ and 24$\%$
+respectively, and DiT model sampling by 34$\%$, while maintaining high-quality
+generation performance.},
+ arxiv_url = {https://arxiv.org/pdf/2312.09608v2.pdf},
+ author = {Senmao Li and Taihang Hu and Joost van de Weijer and Fahad Shahbaz Khan and Tao Liu and Linxuan Li and Shiqi Yang and Yaxing Wang and Ming-Ming Cheng and Jian Yang},
+ github_url = {https://github.com/dbolya/tomesd},
+ title = {Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference},
+ year = {2023}
+}
+
+@article{li-2023-snapfusion,
+ abstract = {Text-to-image diffusion models can create stunning images from natural
+language descriptions that rival the work of professional artists and
+photographers. However, these models are large, with complex network
+architectures and tens of denoising iterations, making them computationally
+expensive and slow to run. As a result, high-end GPUs and cloud-based inference
+are required to run diffusion models at scale. This is costly and has privacy
+implications, especially when user data is sent to a third party. To overcome
+these challenges, we present a generic approach that, for the first time,
+unlocks running text-to-image diffusion models on mobile devices in less than
+$2$ seconds. We achieve so by introducing efficient network architecture and
+improving step distillation. Specifically, we propose an efficient UNet by
+identifying the redundancy of the original model and reducing the computation
+of the image decoder via data distillation. Further, we enhance the step
+distillation by exploring training strategies and introducing regularization
+from classifier-free guidance. Our extensive experiments on MS-COCO show that
+our model with $8$ denoising steps achieves better FID and CLIP scores than
+Stable Diffusion v$1.5$ with $50$ steps. Our work democratizes content creation
+by bringing powerful text-to-image diffusion models to the hands of users.},
+ arxiv_url = {https://arxiv.org/pdf/2306.00980v3.pdf},
+ author = {Yanyu Li and Huan Wang and Qing Jin and Ju Hu and Pavlo Chemerys and Yun Fu and Yanzhi Wang and Sergey Tulyakov and Jian Ren},
+ github_url = {https://github.com/huggingface/diffusers},
+ title = {SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds},
+ year = {2023}
+}
+
+@article{li-2024-distrifusion,
+ abstract = {Diffusion models have achieved great success in synthesizing high-quality
+images. However, generating high-resolution images with diffusion models is
+still challenging due to the enormous computational costs, resulting in a
+prohibitive latency for interactive applications. In this paper, we propose
+DistriFusion to tackle this problem by leveraging parallelism across multiple
+GPUs. Our method splits the model input into multiple patches and assigns each
+patch to a GPU. However, naively implementing such an algorithm breaks the
+interaction between patches and loses fidelity, while incorporating such an
+interaction will incur tremendous communication overhead. To overcome this
+dilemma, we observe the high similarity between the input from adjacent
+diffusion steps and propose displaced patch parallelism, which takes advantage
+of the sequential nature of the diffusion process by reusing the pre-computed
+feature maps from the previous timestep to provide context for the current
+step. Therefore, our method supports asynchronous communication, which can be
+pipelined by computation. Extensive experiments show that our method can be
+applied to recent Stable Diffusion XL with no quality degradation and achieve
+up to a 6.1$\times$ speedup on eight NVIDIA A100s compared to one. Our code is
+publicly available at https://github.com/mit-han-lab/distrifuser.},
+ arxiv_url = {https://arxiv.org/pdf/2402.19481v4.pdf},
+ author = {Muyang Li and Tianle Cai and Jiaxin Cao and Qinsheng Zhang and Han Cai and Junjie Bai and Yangqing Jia and Ming-Yu Liu and Kai Li and Song Han},
+ github_url = {https://github.com/mit-han-lab/distrifuser},
+ title = {DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models},
+ year = {2024}
+}
+
+@article{moon-2024-simple,
+ abstract = {Diffusion models have shown remarkable performance in generation problems
+over various domains including images, videos, text, and audio. A practical
+bottleneck of diffusion models is their sampling speed, due to the repeated
+evaluation of score estimation networks during the inference. In this work, we
+propose a novel framework capable of adaptively allocating compute required for
+the score estimation, thereby reducing the overall sampling time of diffusion
+models. We observe that the amount of computation required for the score
+estimation may vary along the time step for which the score is estimated. Based
+on this observation, we propose an early-exiting scheme, where we skip the
+subset of parameters in the score estimation network during the inference,
+based on a time-dependent exit schedule. Using the diffusion models for image
+synthesis, we show that our method could significantly improve the sampling
+throughput of the diffusion models without compromising image quality.
+Furthermore, we also demonstrate that our method seamlessly integrates with
+various types of solvers for faster sampling, capitalizing on their
+compatibility to enhance overall efficiency. The source code and our
+experiments are available at \url{https://github.com/taehong-moon/ee-diffusion}},
+ arxiv_url = {https://arxiv.org/pdf/2408.05927v1.pdf},
+ author = {Taehong Moon and Moonseok Choi and EungGu Yun and Jongmin Yoon and Gayoung Lee and Jaewoong Cho and Juho Lee},
+ title = {A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models},
+ year = {2024}
+}
+
+@article{oguz-2024-optical,
+ abstract = {Diffusion models generate new samples by progressively decreasing the noise
+from the initially provided random distribution. This inference procedure
+generally utilizes a trained neural network numerous times to obtain the final
+output, creating significant latency and energy consumption on digital
+electronic hardware such as GPUs. In this study, we demonstrate that the
+propagation of a light beam through a semi-transparent medium can be programmed
+to implement a denoising diffusion model on image samples. This framework
+projects noisy image patterns through passive diffractive optical layers, which
+collectively only transmit the predicted noise term in the image. The optical
+transparent layers, which are trained with an online training approach,
+backpropagating the error to the analytical model of the system, are passive
+and kept the same across different steps of denoising. Hence this method
+enables high-speed image generation with minimal power consumption, benefiting
+from the bandwidth and energy efficiency of optical information processing.},
+ arxiv_url = {https://arxiv.org/pdf/2407.10897v2.pdf},
+ author = {Ilker Oguz and Niyazi Ulas Dinc and Mustafa Yildirim and Junjie Ke and Innfarn Yoo and Qifei Wang and Feng Yang and Christophe Moser and Demetri Psaltis},
+ title = {Optical Diffusion Models for Image Generation},
+ year = {2024}
+}
+
+@article{phung-2022-wavelet,
+ abstract = {Diffusion models are rising as a powerful solution for high-fidelity image
+generation, which exceeds GANs in quality in many circumstances. However, their
+slow training and inference speed is a huge bottleneck, blocking them from
+being used in real-time applications. A recent DiffusionGAN method
+significantly decreases the models' running time by reducing the number of
+sampling steps from thousands to several, but their speeds still largely lag
+behind the GAN counterparts. This paper aims to reduce the speed gap by
+proposing a novel wavelet-based diffusion scheme. We extract low-and-high
+frequency components from both image and feature levels via wavelet
+decomposition and adaptively handle these components for faster processing
+while maintaining good generation quality. Furthermore, we propose to use a
+reconstruction term, which effectively boosts the model training convergence.
+Experimental results on CelebA-HQ, CIFAR-10, LSUN-Church, and STL-10 datasets
+prove our solution is a stepping-stone to offering real-time and high-fidelity
+diffusion models. Our code and pre-trained checkpoints are available at
+\url{https://github.com/VinAIResearch/WaveDiff.git}.},
+ arxiv_url = {https://arxiv.org/pdf/2211.16152v2.pdf},
+ author = {Hao Phung and Quan Dao and Anh Tran},
+ title = {Wavelet Diffusion Models Are Fast and Scalable Image Generators},
+ year = {2022}
+}
+
+@article{salimans-2024-multistep,
+ abstract = {We present a new method for making diffusion models faster to sample. The
+method distills many-step diffusion models into few-step models by matching
+conditional expectations of the clean data given noisy data along the sampling
+trajectory. Our approach extends recently proposed one-step methods to the
+multi-step case, and provides a new perspective by interpreting these
+approaches in terms of moment matching. By using up to 8 sampling steps, we
+obtain distilled models that outperform not only their one-step versions but
+also their original many-step teacher models, obtaining new state-of-the-art
+results on the Imagenet dataset. We also show promising results on a large
+text-to-image model where we achieve fast generation of high resolution images
+directly in image space, without needing autoencoders or upsamplers.},
+ arxiv_url = {https://arxiv.org/pdf/2406.04103v1.pdf},
+ author = {Tim Salimans and Thomas Mensink and Jonathan Heek and Emiel Hoogeboom},
+ github_url = {https://github.com/google/jax},
+ title = {Multistep Distillation of Diffusion Models via Moment Matching},
+ year = {2024}
+}
+
+@article{shang-2022-post,
+ abstract = {Denoising diffusion (score-based) generative models have recently achieved
+significant accomplishments in generating realistic and diverse data. These
+approaches define a forward diffusion process for transforming data into noise
+and a backward denoising process for sampling data from noise. Unfortunately,
+the generation process of current denoising diffusion models is notoriously
+slow due to the lengthy iterative noise estimations, which rely on cumbersome
+neural networks. It prevents the diffusion models from being widely deployed,
+especially on edge devices. Previous works accelerate the generation process of
+diffusion model (DM) via finding shorter yet effective sampling trajectories.
+However, they overlook the cost of noise estimation with a heavy network in
+every iteration. In this work, we accelerate generation from the perspective of
+compressing the noise estimation network. Due to the difficulty of retraining
+DMs, we exclude mainstream training-aware compression paradigms and introduce
+post-training quantization (PTQ) into DM acceleration. However, the output
+distributions of noise estimation networks change with time-step, making
+previous PTQ methods fail in DMs since they are designed for single-time step
+scenarios. To devise a DM-specific PTQ method, we explore PTQ on DM in three
+aspects: quantized operations, calibration dataset, and calibration metric. We
+summarize and use several observations derived from all-inclusive
+investigations to formulate our method, which especially targets the unique
+multi-time-step structure of DMs. Experimentally, our method can directly
+quantize full-precision DMs into 8-bit models while maintaining or even
+improving their performance in a training-free manner. Importantly, our method
+can serve as a plug-and-play module on other fast-sampling methods, e.g., DDIM.
+The code is available at https://github.com/42Shawn/PTQ4DM .},
+ arxiv_url = {https://arxiv.org/pdf/2211.15736v3.pdf},
+ author = {Yuzhang Shang and Zhihang Yuan and Bin Xie and Bingzhe Wu and Yan Yan},
+ github_url = {https://github.com/42Shawn/PTQ4DM},
+ title = {Post-Training Quantization on Diffusion Models},
+ year = {2022}
+}
+
+@article{shue-2022-neural,
+ abstract = {Diffusion models have emerged as the state-of-the-art for image generation,
+among other tasks. Here, we present an efficient diffusion-based model for
+3D-aware generation of neural fields. Our approach pre-processes training data,
+such as ShapeNet meshes, by converting them to continuous occupancy fields and
+factoring them into a set of axis-aligned triplane feature representations.
+Thus, our 3D training scenes are all represented by 2D feature planes, and we
+can directly train existing 2D diffusion models on these representations to
+generate 3D neural fields with high quality and diversity, outperforming
+alternative approaches to 3D-aware generation. Our approach requires essential
+modifications to existing triplane factorization pipelines to make the
+resulting features easy to learn for the diffusion model. We demonstrate
+state-of-the-art results on 3D generation on several object classes from
+ShapeNet.},
+ arxiv_url = {https://arxiv.org/pdf/2211.16677v1.pdf},
+ author = {J. Ryan Shue and Eric Ryan Chan and Ryan Po and Zachary Ankner and Jiajun Wu and Gordon Wetzstein},
+ title = {3D Neural Field Generation Using Triplane Diffusion},
+ year = {2022}
+}
+
+@article{xu-2023-semi,
+ abstract = {Despite the proliferation of generative models, achieving fast sampling
+during inference without compromising sample diversity and quality remains
+challenging. Existing models such as Denoising Diffusion Probabilistic Models
+(DDPM) deliver high-quality, diverse samples but are slowed by an inherently
+high number of iterative steps. The Denoising Diffusion Generative Adversarial
+Networks (DDGAN) attempted to circumvent this limitation by integrating a GAN
+model for larger jumps in the diffusion process. However, DDGAN encountered
+scalability limitations when applied to large datasets. To address these
+limitations, we introduce a novel approach that tackles the problem by matching
+implicit and explicit factors. More specifically, our approach involves
+utilizing an implicit model to match the marginal distributions of noisy data
+and the explicit conditional distribution of the forward diffusion. This
+combination allows us to effectively match the joint denoising distributions.
+Unlike DDPM but similar to DDGAN, we do not enforce a parametric distribution
+for the reverse step, enabling us to take large steps during inference. Similar
+to the DDPM but unlike DDGAN, we take advantage of the exact form of the
+diffusion process. We demonstrate that our proposed method obtains comparable
+generative performance to diffusion-based models and vastly superior results to
+models with a small number of sampling steps.},
+ arxiv_url = {https://arxiv.org/pdf/2306.12511v3.pdf},
+ author = {Yanwu Xu and Mingming Gong and Shaoan Xie and Wei Wei and Matthias Grundmann and Kayhan Batmanghelich and Tingbo Hou},
+ title = {Semi-Implicit Denoising Diffusion Models (SIDDMs)},
+ year = {2023}
+}
+
+@article{yan-2023-diffusion,
+ abstract = {In recent advancements in high-fidelity image generation, Denoising Diffusion
+Probabilistic Models (DDPMs) have emerged as a key player. However, their
+application at high resolutions presents significant computational challenges.
+Current methods, such as patchifying, expedite processes in UNet and
+Transformer architectures but at the expense of representational capacity.
+Addressing this, we introduce the Diffusion State Space Model (DiffuSSM), an
+architecture that supplants attention mechanisms with a more scalable state
+space model backbone. This approach effectively handles higher resolutions
+without resorting to global compression, thus preserving detailed image
+representation throughout the diffusion process. Our focus on FLOP-efficient
+architectures in diffusion training marks a significant step forward.
+Comprehensive evaluations on both ImageNet and LSUN datasets at two resolutions
+demonstrate that DiffuSSMs are on par or even outperform existing diffusion
+models with attention modules in FID and Inception Score metrics while
+significantly reducing total FLOP usage.},
+ arxiv_url = {https://arxiv.org/pdf/2311.18257v1.pdf},
+ author = {Jing Nathan Yan and Jiatao Gu and Alexander M. Rush},
+ github_url = {https://github.com/CompVis/stable-diffusion},
+ title = {Diffusion Models Without Attention},
+ year = {2023}
+}
+
+@article{zhang-2023-improving,
+ abstract = {Diffusion models, emerging as powerful deep generative tools, excel in
+various applications. They operate through a two-steps process: introducing
+noise into training samples and then employing a model to convert random noise
+into new samples (e.g., images). However, their remarkable generative
+performance is hindered by slow training and sampling. This is due to the
+necessity of tracking extensive forward and reverse diffusion trajectories, and
+employing a large model with numerous parameters across multiple timesteps
+(i.e., noise levels). To tackle these challenges, we present a multi-stage
+framework inspired by our empirical findings. These observations indicate the
+advantages of employing distinct parameters tailored to each timestep while
+retaining universal parameters shared across all time steps. Our approach
+involves segmenting the time interval into multiple stages where we employ
+custom multi-decoder U-net architecture that blends time-dependent models with
+a universally shared encoder. Our framework enables the efficient distribution
+of computational resources and mitigates inter-stage interference, which
+substantially improves training efficiency. Extensive numerical experiments
+affirm the effectiveness of our framework, showcasing significant training and
+sampling efficiency enhancements on three state-of-the-art diffusion models,
+including large-scale latent diffusion models. Furthermore, our ablation
+studies illustrate the impact of two important components in our framework: (i)
+a novel timestep clustering algorithm for stage division, and (ii) an
+innovative multi-decoder U-net architecture, seamlessly integrating universal
+and customized hyperparameters.},
+ arxiv_url = {https://arxiv.org/pdf/2312.09181v3.pdf},
+ author = {Huijie Zhang and Yifu Lu and Ismail Alkhouri and Saiprasad Ravishankar and Dogyoon Song and Qing Qu},
+ github_url = {https://github.com/LucasYFL/Multistage_Diffusion},
+ title = {Improving Training Efficiency of Diffusion Models via Multi-Stage Framework and Tailored Multi-Decoder Architecture},
+ year = {2023}
+}
+
+@article{zhu-2024-dip,
+ abstract = {Diffusion models have achieved remarkable progress in the field of image
+generation due to their outstanding capabilities. However, these models require
+substantial computing resources because of the multi-step denoising process
+during inference. While traditional pruning methods have been employed to
+optimize these models, the retraining process necessitates large-scale training
+datasets and extensive computational costs to maintain generalization ability,
+making it neither convenient nor efficient. Recent studies attempt to utilize
+the similarity of features across adjacent denoising stages to reduce
+computational costs through simple and static strategies. However, these
+strategies cannot fully harness the potential of the similar feature patterns
+across adjacent timesteps. In this work, we propose a novel pruning method that
+derives an efficient diffusion model via a more intelligent and differentiable
+pruner. At the core of our approach is casting the model pruning process into a
+SubNet search process. Specifically, we first introduce a SuperNet based on
+standard diffusion via adding some backup connections built upon the similar
+features. We then construct a plugin pruner network and design optimization
+losses to identify redundant computation. Finally, our method can identify an
+optimal SubNet through few-step gradient optimization and a simple
+post-processing procedure. We conduct extensive experiments on various
+diffusion models including Stable Diffusion series and DiTs. Our DiP-GO
+approach achieves 4.4 x speedup for SD-1.5 without any loss of accuracy,
+significantly outperforming the previous state-of-the-art methods.},
+ arxiv_url = {https://arxiv.org/pdf/2410.16942v1.pdf},
+ author = {Haowei Zhu and Dehua Tang and Ji Liu and Mingjie Lu and Jintu Zheng and Jinzhang Peng and Dong Li and Yu Wang and Fan Jiang and Lu Tian and Spandan Tiwari and Ashish Sirasao and Jun-Hai Yong and Bin Wang and Emad Barsoum},
+ title = {DiP-GO: A Diffusion Pruner via Few-step Gradient Optimization},
+ year = {2024}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{altschuler-2023-faster,
+ abstract = {Understanding the complexity of sampling from a strongly log-concave and
+log-smooth distribution $\pi$ on $\mathbb{R}^d$ to high accuracy is a
+fundamental problem, both from a practical and theoretical standpoint. In
+practice, high-accuracy samplers such as the classical Metropolis-adjusted
+Langevin algorithm (MALA) remain the de facto gold standard; and in theory, via
+the proximal sampler reduction, it is understood that such samplers are key for
+sampling even beyond log-concavity (in particular, for distributions satisfying
+isoperimetric assumptions).
+  In this work, we improve the dimension dependence of this sampling problem to
+$\tilde{O}(d^{1/2})$, whereas the previous best result for MALA was
+$\tilde{O}(d)$. This closes the long line of work on the complexity of MALA,
+and moreover leads to state-of-the-art guarantees for high-accuracy sampling
+under strong log-concavity and beyond (thanks to the aforementioned reduction).
+  Our starting point is that the complexity of MALA improves to
+$\tilde{O}(d^{1/2})$, but only under a warm start (an initialization with
+constant R\'enyi divergence w.r.t. $\pi$). Previous algorithms took much longer
+to find a warm start than to use it, and closing this gap has remained an
+important open problem in the field. Our main technical contribution settles
+this problem by establishing the first $\tilde{O}(d^{1/2})$ R\'enyi mixing
+rates for the discretized underdamped Langevin diffusion. For this, we develop
+new differential-privacy-inspired techniques based on R\'enyi divergences with
+Orlicz--Wasserstein shifts, which allow us to sidestep longstanding challenges
+for proving fast convergence of hypocoercive differential equations.},
+ arxiv_url = {https://arxiv.org/pdf/2302.10249v1.pdf},
+ author = {Jason M. Altschuler and Sinho Chewi},
+ title = {Faster high-accuracy log-concave sampling via algorithmic warm starts.},
+ year = {2023}
+}
+
+@article{austin-2021-structured,
+ abstract = {Denoising diffusion probabilistic models (DDPMs) (Ho et al. 2020) have shown
+impressive results on image and waveform generation in continuous state spaces.
+Here, we introduce Discrete Denoising Diffusion Probabilistic Models (D3PMs),
+diffusion-like generative models for discrete data that generalize the
+multinomial diffusion model of Hoogeboom et al. 2021, by going beyond
+corruption processes with uniform transition probabilities. This includes
+corruption with transition matrices that mimic Gaussian kernels in continuous
+space, matrices based on nearest neighbors in embedding space, and matrices
+that introduce absorbing states. The third allows us to draw a connection
+between diffusion models and autoregressive and mask-based generative models.
+We show that the choice of transition matrix is an important design decision
+that leads to improved results in image and text domains. We also introduce a
+new loss function that combines the variational lower bound with an auxiliary
+cross entropy loss. For text, this model class achieves strong results on
+character-level text generation while scaling to large vocabularies on LM1B. On
+the image dataset CIFAR-10, our models approach the sample quality and exceed
+the log-likelihood of the continuous-space DDPM model.},
+ arxiv_url = {https://arxiv.org/pdf/2107.03006v3.pdf},
+ author = {Jacob Austin and Daniel D. Johnson and Jonathan Ho and Daniel Tarlow and Rianne van den Berg},
+ title = {Structured denoising diffusion models in discrete state-spaces.},
+ year = {2021}
+}
+
+@article{author-year-note,
+ title = {A note on the isoperimetric constant.}
+}
+
+@article{benton-2023-nearlyd,
+ abstract = {Denoising diffusions are a powerful method to generate approximate samples
+from high-dimensional data distributions. Recent results provide polynomial
+bounds on their convergence rate, assuming $L^2$-accurate scores. Until now,
+the tightest bounds were either superlinear in the data dimension or required
+strong smoothness assumptions. We provide the first convergence bounds which
+are linear in the data dimension (up to logarithmic factors) assuming only
+finite second moments of the data distribution. We show that diffusion models
+require at most $\tilde O(\frac{d \log^2(1/\delta)}{\varepsilon^2})$ steps to
+approximate an arbitrary distribution on $\mathbb{R}^d$ corrupted with Gaussian
+noise of variance $\delta$ to within $\varepsilon^2$ in KL divergence. Our
+proof extends the Girsanov-based methods of previous works. We introduce a
+refined treatment of the error from discretizing the reverse SDE inspired by
+stochastic localization.},
+ arxiv_url = {https://arxiv.org/pdf/2308.03686v3.pdf},
+ author = {Joe Benton and Valentin De Bortoli and Arnaud Doucet and George Deligiannidis},
+ title = {Nearlyd-linear convergence bounds for diffusion models via stochastic localization.},
+ year = {2023}
+}
+
+@article{block-2020-generative,
+ abstract = {We study convergence of a generative modeling method that first estimates the
+score function of the distribution using Denoising Auto-Encoders (DAE) or
+Denoising Score Matching (DSM) and then employs Langevin diffusion for
+sampling. We show that both DAE and DSM provide estimates of the score of the
+Gaussian smoothed population density, allowing us to apply the machinery of
+Empirical Processes.
+  We overcome the challenge of relying only on $L^2$ bounds on the score
+estimation error and provide finite-sample bounds in the Wasserstein distance
+between the law of the population distribution and the law of this sampling
+scheme. We then apply our results to the homotopy method of arXiv:1907.05600
+and provide theoretical justification for its empirical success.},
+ arxiv_url = {https://arxiv.org/pdf/2002.00107v4.pdf},
+ author = {Adam Block and Youssef Mroueh and Alexander Rakhlin},
+ title = {Generative modeling with denoising auto-encoders and Langevin sampling.},
+ year = {2020}
+}
+
+@article{boffi-2022-probability,
+ abstract = {The method of choice for integrating the time-dependent Fokker-Planck
+equation in high-dimension is to generate samples from the solution via
+integration of the associated stochastic differential equation. Here, we study
+an alternative scheme based on integrating an ordinary differential equation
+that describes the flow of probability. Acting as a transport map, this
+equation deterministically pushes samples from the initial density onto samples
+from the solution at any later time. Unlike integration of the stochastic
+dynamics, the method has the advantage of giving direct access to quantities
+that are challenging to estimate from trajectories alone, such as the
+probability current, the density itself, and its entropy. The probability flow
+equation depends on the gradient of the logarithm of the solution (its
+"score"), and so is a-priori unknown. To resolve this dependence, we model the
+score with a deep neural network that is learned on-the-fly by propagating a
+set of samples according to the instantaneous probability current. We show
+theoretically that the proposed approach controls the KL divergence from the
+learned solution to the target, while learning on external samples from the
+stochastic differential equation does not control either direction of the KL
+divergence. Empirically, we consider several high-dimensional Fokker-Planck
+equations from the physics of interacting particle systems. We find that the
+method accurately matches analytical solutions when they are available as well
+as moments computed via Monte-Carlo when they are not. Moreover, the method
+offers compelling predictions for the global entropy production rate that
+out-perform those obtained from learning on stochastic trajectories, and can
+effectively capture non-equilibrium steady-state probability currents over long
+time intervals.},
+ arxiv_url = {https://arxiv.org/pdf/2206.04642v3.pdf},
+ author = {Nicholas M. Boffi and Eric Vanden-Eijnden},
+ title = {Probability flow solution of the Fokker-Planck equation.},
+ year = {2022}
+}
+
+@article{chen-2022-improved,
+ abstract = {We give an improved theoretical analysis of score-based generative modeling.
+Under a score estimate with small $L^2$ error (averaged across timesteps), we
+provide efficient convergence guarantees for any data distribution with
+second-order moment, by either employing early stopping or assuming smoothness
+condition on the score function of the data distribution. Our result does not
+rely on any log-concavity or functional inequality assumption and has a
+logarithmic dependence on the smoothness. In particular, we show that under
+only a finite second moment condition, approximating the following in reverse
+KL divergence in $\epsilon$-accuracy can be done in $\tilde O\left(\frac{d \log
+(1/\delta)}{\epsilon}\right)$ steps: 1) the variance-$\delta$ Gaussian
+perturbation of any data distribution; 2) data distributions with
+$1/\delta$-smooth score functions. Our analysis also provides a quantitative
+comparison between different discrete approximations and may guide the choice
+of discretization points in practice.},
+ arxiv_url = {https://arxiv.org/pdf/2211.01916v2.pdf},
+ author = {Hongrui Chen and Holden Lee and Jianfeng Lu},
+ title = {Improved analysis of score-based generative modeling: User-friendly bounds under minimal smoothness assumptions.},
+ year = {2022}
+}
+
+@article{chen-2022-sampling,
+ abstract = {We provide theoretical convergence guarantees for score-based generative
+models (SGMs) such as denoising diffusion probabilistic models (DDPMs), which
+constitute the backbone of large-scale real-world generative models such as
+DALL$\cdot$E 2. Our main result is that, assuming accurate score estimates,
+such SGMs can efficiently sample from essentially any realistic data
+distribution. In contrast to prior works, our results (1) hold for an
+$L^2$-accurate score estimate (rather than $L^\infty$-accurate); (2) do not
+require restrictive functional inequality conditions that preclude substantial
+non-log-concavity; (3) scale polynomially in all relevant problem parameters;
+and (4) match state-of-the-art complexity guarantees for discretization of the
+Langevin diffusion, provided that the score error is sufficiently small. We
+view this as strong theoretical justification for the empirical success of
+SGMs. We also examine SGMs based on the critically damped Langevin diffusion
+(CLD). Contrary to conventional wisdom, we provide evidence that the use of the
+CLD does not reduce the complexity of SGMs.},
+ arxiv_url = {https://arxiv.org/pdf/2209.11215v3.pdf},
+ author = {Sitan Chen and Sinho Chewi and Jerry Li and Yuanzhi Li and Adil Salim and Anru R. Zhang},
+ title = {Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions.},
+ year = {2022}
+}
+
+@article{chen-2023-the,
+ abstract = {We provide the first polynomial-time convergence guarantees for the
+probability flow ODE implementation (together with a corrector step) of
+score-based generative modeling. Our analysis is carried out in the wake of
+recent results obtaining such guarantees for the SDE-based implementation
+(i.e., denoising diffusion probabilistic modeling or DDPM), but requires the
+development of novel techniques for studying deterministic dynamics without
+contractivity. Through the use of a specially chosen corrector step based on
+the underdamped Langevin diffusion, we obtain better dimension dependence than
+prior works on DDPM ($O(\sqrt{d})$ vs. $O(d)$, assuming smoothness of the data
+distribution), highlighting potential advantages of the ODE framework.},
+ arxiv_url = {https://arxiv.org/pdf/2305.11798v1.pdf},
+ author = {Sitan Chen and Sinho Chewi and Holden Lee and Yuanzhi Li and Jianfeng Lu and Adil Salim},
+ title = {The probability flow ODE is provably fast.},
+ year = {2023}
+}
+
+@article{cheng-2017-convergence,
+ abstract = {Langevin diffusion is a commonly used tool for sampling from a given
+distribution. In this work, we establish that when the target density $p^*$ is
+such that $\log p^*$ is $L$ smooth and $m$ strongly convex, discrete Langevin
+diffusion produces a distribution $p$ with $KL(p||p^*)\leq \epsilon$ in
+$\tilde{O}(\frac{d}{\epsilon})$ steps, where $d$ is the dimension of the sample
+space. We also study the convergence rate when the strong-convexity assumption
+is absent. By considering the Langevin diffusion as a gradient flow in the
+space of probability distributions, we obtain an elegant analysis that applies
+to the stronger property of convergence in KL-divergence and gives a
+conceptually simpler proof of the best-known convergence results in weaker
+metrics.},
+ arxiv_url = {https://arxiv.org/pdf/1705.09048v2.pdf},
+ author = {Xiang Cheng and Peter Bartlett},
+ title = {Convergence of langevin mcmc in kl-divergence.},
+ year = {2017}
+}
