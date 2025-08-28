@@ -9,7 +9,7 @@ from .evaluate import evaluate_model_checkpoint
 
 def parse_args():
     ap = argparse.ArgumentParser(description="RevLoRA-Diffusion Toy Experiments")
-    ap.add_argument("--config", type=str, default="config/revlora_toy.yaml", help="Path to YAML config")
+    ap.add_argument("--config", type=str, default="config/config.yaml", help="Path to YAML config")
     return ap.parse_args()
 
 
@@ -18,7 +18,7 @@ def main():
     with open(args.config, "r") as f:
         cfg = yaml.safe_load(f)
 
-    images_dir = cfg.get("paths", {}).get("images_dir", ".research/iteration1/images")
+    images_dir = cfg.get("paths", {}).get("images_dir", ".research/iteration2/images")
     models_dir = cfg.get("paths", {}).get("models_dir", "models")
 
     env = prepare_environment(images_dir, models_dir)
