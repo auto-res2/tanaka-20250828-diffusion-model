@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 5, in <module>
+    from .train import run_experiment1, run_experiment2, run_experiment3
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py", line 29, in <module>
+    from .evaluate import compute_expert_timestep_heatmap, evaluate_router_stability
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/evaluate.py", line 8, in <module>
+    from .train import index_to_logsnr, ASTMEDiTSmall, ASTMEBlock
+ImportError: cannot import name 'index_to_logsnr' from partially initialized module 'src.train' (most likely due to a circular import) (/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/train.py)
