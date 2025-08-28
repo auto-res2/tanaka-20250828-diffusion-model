@@ -6,5 +6,82 @@
     "diffusion model checkpointing",
     "low memory diffusion",
     "compressed diffusion training"
+  ],
+  "research_study_list": [
+    {
+      "title": "Hollowed Net for On-Device Personalization of Text-to-Image Diffusion Models"
+    },
+    {
+      "title": "SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds"
+    },
+    {
+      "title": "Fast and Memory-Efficient Video Diffusion Using Streamlined Inference"
+    },
+    {
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+    },
+    {
+      "title": "Temporal Dynamic Quantization for Diffusion Models"
+    },
+    {
+      "title": "Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation"
+    },
+    {
+      "title": "Structural Pruning for Diffusion Models"
+    },
+    {
+      "title": "Deep Equilibrium Approaches to Diffusion Models"
+    },
+    {
+      "title": "PixelAsParam: A Gradient View on Diffusion Sampling with Guidance"
+    },
+    {
+      "title": "AdjointDPM: Adjoint Sensitivity Method for Gradient Backpropagation of Diffusion Probabilistic Models"
+    },
+    {
+      "title": "Structural Pruning for Diffusion Models"
+    },
+    {
+      "title": "Temporal Dynamic Quantization for Diffusion Models"
+    },
+    {
+      "title": "Cache Me if You Can: Accelerating Diffusion Models through Block Caching"
+    },
+    {
+      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
+    },
+    {
+      "title": "Clockwork Diffusion: Efficient Generation With Model-Step Distillation"
+    },
+    {
+      "title": "Hollowed Net for On-Device Personalization of Text-to-Image Diffusion Models"
+    },
+    {
+      "title": "Optical Diffusion Models for Image Generation"
+    },
+    {
+      "title": "Dimensionality-Varying Diffusion Process"
+    },
+    {
+      "title": "Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching"
+    },
+    {
+      "title": "HOLODIFFUSION: Training a 3D Diffusion Model Using 2D Images"
+    },
+    {
+      "title": "Structural Pruning for Diffusion Models"
+    },
+    {
+      "title": "Lossy Image Compression with Conditional Diffusion Models"
+    },
+    {
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+    },
+    {
+      "title": "Towards image compression with perfect realism at ultra-low bitrates"
+    },
+    {
+      "title": "Ambient Diffusion: Learning Clean Distributions from Corrupted Data"
+    }
   ]
 }
