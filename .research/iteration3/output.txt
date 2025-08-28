@@ -1,0 +1,300 @@
+=== pip install start Thu Aug 28 09:39:26 UTC 2025 ===
+Collecting torch (from -r requirements.txt (line 1))
+  Using cached torch-2.8.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting numpy (from -r requirements.txt (line 2))
+  Using cached numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting matplotlib (from -r requirements.txt (line 3))
+  Using cached matplotlib-3.10.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting seaborn (from -r requirements.txt (line 4))
+  Using cached seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting scikit-learn (from -r requirements.txt (line 5))
+  Using cached scikit_learn-1.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting PyYAML (from -r requirements.txt (line 6))
+  Using cached PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting pynvml (from -r requirements.txt (line 7))
+  Using cached pynvml-12.0.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting fvcore (from -r requirements.txt (line 8))
+  Using cached fvcore-0.1.5.post20221221-py3-none-any.whl
+Collecting iopath (from -r requirements.txt (line 9))
+  Using cached iopath-0.1.10-py3-none-any.whl
+Collecting yacs (from -r requirements.txt (line 10))
+  Using cached yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Collecting tabulate (from -r requirements.txt (line 11))
+  Using cached tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+Collecting termcolor (from -r requirements.txt (line 12))
+  Using cached termcolor-3.1.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting filelock (from torch->-r requirements.txt (line 1))
+  Using cached filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting typing-extensions>=4.10.0 (from torch->-r requirements.txt (line 1))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy>=1.13.3 (from torch->-r requirements.txt (line 1))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch->-r requirements.txt (line 1))
+  Using cached networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch->-r requirements.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch->-r requirements.txt (line 1))
+  Using cached fsspec-2025.7.0-py3-none-any.whl.metadata (12 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.8.93 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-runtime-cu12==12.8.90 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-cupti-cu12==12.8.90 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cudnn-cu12==9.10.2.21 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cublas-cu12==12.8.4.1 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cufft-cu12==11.3.3.83 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-curand-cu12==10.3.9.90 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cusolver-cu12==11.7.3.90 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cusparse-cu12==12.5.8.93 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cusparselt-cu12==0.7.1 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl.metadata (7.0 kB)
+Collecting nvidia-nccl-cu12==2.27.3 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.0 kB)
+Collecting nvidia-nvtx-cu12==12.8.90 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvjitlink-cu12==12.8.93 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cufile-cu12==1.13.1.3 (from torch->-r requirements.txt (line 1))
+  Using cached nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting triton==3.4.0 (from torch->-r requirements.txt (line 1))
+  Using cached triton-3.4.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+Requirement already satisfied: setuptools>=40.8.0 in /home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages (from triton==3.4.0->torch->-r requirements.txt (line 1)) (65.5.0)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 3))
+  Using cached contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 3))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib->-r requirements.txt (line 3))
+  Using cached fonttools-4.59.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (109 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 3))
+  Using cached kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.3 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 3))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pillow>=8 (from matplotlib->-r requirements.txt (line 3))
+  Using cached pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib->-r requirements.txt (line 3))
+  Using cached pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->-r requirements.txt (line 3))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pandas>=1.2 (from seaborn->-r requirements.txt (line 4))
+  Using cached pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+Collecting scipy>=1.8.0 (from scikit-learn->-r requirements.txt (line 5))
+  Using cached scipy-1.16.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (61 kB)
+Collecting joblib>=1.2.0 (from scikit-learn->-r requirements.txt (line 5))
+  Using cached joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn->-r requirements.txt (line 5))
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting nvidia-ml-py<13.0.0a0,>=12.0.0 (from pynvml->-r requirements.txt (line 7))
+  Using cached nvidia_ml_py-12.575.51-py3-none-any.whl.metadata (9.3 kB)
+Collecting tqdm (from fvcore->-r requirements.txt (line 8))
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting portalocker (from iopath->-r requirements.txt (line 9))
+  Using cached portalocker-3.2.0-py3-none-any.whl.metadata (8.7 kB)
+Collecting pytz>=2020.1 (from pandas>=1.2->seaborn->-r requirements.txt (line 4))
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=1.2->seaborn->-r requirements.txt (line 4))
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 3))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch->-r requirements.txt (line 1))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch->-r requirements.txt (line 1))
+  Using cached MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Using cached torch-2.8.0-cp311-cp311-manylinux_2_28_x86_64.whl (888.1 MB)
+Using cached nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl (594.3 MB)
+Using cached nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.2 MB)
+Using cached nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (88.0 MB)
+Using cached nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (954 kB)
+Using cached nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl (706.8 MB)
+Using cached nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (193.1 MB)
+Using cached nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+Using cached nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl (63.6 MB)
+Using cached nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl (267.5 MB)
+Using cached nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (288.2 MB)
+Using cached nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl (287.2 MB)
+Using cached nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (322.4 MB)
+Using cached nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.3 MB)
+Using cached nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89 kB)
+Using cached triton-3.4.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.5 MB)
+Using cached numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+Using cached matplotlib-3.10.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached seaborn-0.13.2-py3-none-any.whl (294 kB)
+Using cached scikit_learn-1.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+Using cached PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (762 kB)
+Using cached pynvml-12.0.0-py3-none-any.whl (26 kB)
+Using cached nvidia_ml_py-12.575.51-py3-none-any.whl (47 kB)
+Using cached yacs-0.1.8-py3-none-any.whl (14 kB)
+Using cached tabulate-0.9.0-py3-none-any.whl (35 kB)
+Using cached termcolor-3.1.0-py3-none-any.whl (7.7 kB)
+Using cached contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.59.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+Using cached joblib-1.5.2-py3-none-any.whl (308 kB)
+Using cached kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+Using cached pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+Using cached pyparsing-3.2.3-py3-none-any.whl (111 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached scipy-1.16.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (35.4 MB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Using cached filelock-3.19.1-py3-none-any.whl (15 kB)
+Using cached fsspec-2025.7.0-py3-none-any.whl (199 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+Using cached networkx-3.5-py3-none-any.whl (2.0 MB)
+Using cached portalocker-3.2.0-py3-none-any.whl (22 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Installing collected packages: pytz, nvidia-ml-py, nvidia-cusparselt-cu12, mpmath, tzdata, typing-extensions, triton, tqdm, threadpoolctl, termcolor, tabulate, sympy, six, PyYAML, pyparsing, pynvml, portalocker, pillow, packaging, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, MarkupSafe, kiwisolver, joblib, fsspec, fonttools, filelock, cycler, yacs, scipy, python-dateutil, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, jinja2, iopath, contourpy, scikit-learn, pandas, nvidia-cusolver-cu12, matplotlib, fvcore, torch, seaborn
+
+Successfully installed MarkupSafe-3.0.2 PyYAML-6.0.2 contourpy-1.3.3 cycler-0.12.1 filelock-3.19.1 fonttools-4.59.2 fsspec-2025.7.0 fvcore-0.1.5.post20221221 iopath-0.1.10 jinja2-3.1.6 joblib-1.5.2 kiwisolver-1.4.9 matplotlib-3.10.5 mpmath-1.3.0 networkx-3.5 numpy-2.3.2 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.90 nvidia-cusolver-cu12-11.7.3.90 nvidia-cusparse-cu12-12.5.8.93 nvidia-cusparselt-cu12-0.7.1 nvidia-ml-py-12.575.51 nvidia-nccl-cu12-2.27.3 nvidia-nvjitlink-cu12-12.8.93 nvidia-nvtx-cu12-12.8.90 packaging-25.0 pandas-2.3.2 pillow-11.3.0 portalocker-3.2.0 pynvml-12.0.0 pyparsing-3.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 scikit-learn-1.7.1 scipy-1.16.1 seaborn-0.13.2 six-1.17.0 sympy-1.14.0 tabulate-0.9.0 termcolor-3.1.0 threadpoolctl-3.6.0 torch-2.8.0 tqdm-4.67.1 triton-3.4.0 typing-extensions-4.15.0 tzdata-2025.2 yacs-0.1.8
+=== pip install end Thu Aug 28 09:40:56 UTC 2025 ===
+=== experiment start Thu Aug 28 09:40:56 UTC 2025 ===
+Running Experiment 1 -> .research/iteration3/images/exp1
+Training baseline UNet (toy)...
+[Baseline] Epoch 1/2 val_eps_mse=0.6784
+[Baseline] Epoch 2/2 val_eps_mse=0.5434
+Training R2Diff (toy) with teacher forcing and int8 state...
+[R2Diff] Epoch 1/2 val_eps_mse=0.7094 avg_gate=0.502
+[R2Diff] Epoch 2/2 val_eps_mse=0.5049 avg_gate=0.465
+Measuring baseline sampling...
+Baseline sampling stats: {'latency_ms_mean': 56.105613708496094, 'latency_ms_std': 4.784812276927161, 'energy_j_mean': 4.289666666666666, 'peak_mem_mb': 1544.41162109375}
+Measuring R2Diff sampling...
+R2Diff sampling stats: {'latency_ms_mean': 111.4186445871989, 'latency_ms_std': 0.12200794969781198, 'energy_j_mean': 9.28, 'peak_mem_mb': 2660.0009765625}
+PSNR (dB): Baseline=-0.99, R2Diff=-1.30
+Training tiny classifier on real patterns for confusion matrix...
+Experiment 1 completed. Outputs saved in: .research/iteration3/images/exp1
+Running Experiment 2 -> .research/iteration3/images/exp2
+[Baseline] Epoch 1/2 val_eps_mse=0.6737
+[Baseline] Epoch 2/2 val_eps_mse=0.5077
+[R2Diff] Epoch 1/2 val_eps_mse=0.8714 avg_gate=0.482
+[R2Diff] Epoch 2/2 val_eps_mse=0.7370 avg_gate=0.453
+[Sampler=ddpm, steps=30] PSNR: Baseline=-1.50 dB, R2Diff=-1.58 dB
+[Sampler=ddim, steps=8] PSNR: Baseline=-0.91 dB, R2Diff=-1.39 dB
+[Sampler=ddim, steps=15] PSNR: Baseline=-0.90 dB, R2Diff=-1.43 dB
+[Sampler=dpmpp, steps=15] PSNR: Baseline=-0.93 dB, R2Diff=-1.43 dB
+[Sampler=lcm, steps=8] PSNR: Baseline=-0.89 dB, R2Diff=-1.38 dB
+Experiment 2 completed. Outputs saved in: .research/iteration3/images/exp2
+Running Experiment 3 -> .research/iteration3/images/exp3
+[Baseline] Epoch 1/2 val_eps_mse=0.6500
+[Baseline] Epoch 2/2 val_eps_mse=0.5637
+Training ablation config: {'name': 'depth1_int8_learned', 'depth': 1, 'quant': 'int8', 'learned_gate': True, 'distill': True}
+[R2Diff] Epoch 1/1 val_eps_mse=0.7481 avg_gate=0.458
+Ablation depth1_int8_learned -> PSNR=-1.40 dB, FLOPs_delta_block=1152000.0
+Training ablation config: {'name': 'depth2_int8_learned', 'depth': 2, 'quant': 'int8', 'learned_gate': True, 'distill': True}
+[R2Diff] Epoch 1/1 val_eps_mse=0.7712 avg_gate=0.503
+Ablation depth2_int8_learned -> PSNR=-1.40 dB, FLOPs_delta_block=2036736.0
+Training ablation config: {'name': 'depth1_int4_learned', 'depth': 1, 'quant': 'int4', 'learned_gate': True, 'distill': True}
+[R2Diff] Epoch 1/1 val_eps_mse=0.7280 avg_gate=0.492
+Ablation depth1_int4_learned -> PSNR=-1.33 dB, FLOPs_delta_block=1152000.0
+Training ablation config: {'name': 'depth1_fp16_learned', 'depth': 1, 'quant': 'fp16', 'learned_gate': True, 'distill': True}
+[R2Diff] Epoch 1/1 val_eps_mse=0.6809 avg_gate=0.501
+Ablation depth1_fp16_learned -> PSNR=-1.19 dB, FLOPs_delta_block=1152000.0
+Training ablation config: {'name': 'depth1_int8_manual', 'depth': 1, 'quant': 'int8', 'learned_gate': False, 'distill': True}
+[R2Diff] Epoch 1/1 val_eps_mse=0.8191 avg_gate=0.499
+Ablation depth1_int8_manual -> PSNR=-1.35 dB, FLOPs_delta_block=1152000.0
+Training ablation config: {'name': 'depth1_int8_scratch', 'depth': 1, 'quant': 'int8', 'learned_gate': True, 'distill': False}
+Ablation depth1_int8_scratch -> PSNR=-1.26 dB, FLOPs_delta_block=1152000.0
+Experiment 3 completed. Outputs saved in: .research/iteration3/images/exp3
+All experiments finished.
+{
+  "exp1": {
+    "baseline_metrics": {
+      "latency_ms_mean": 56.105613708496094,
+      "latency_ms_std": 4.784812276927161,
+      "energy_j_mean": 4.289666666666666,
+      "peak_mem_mb": 1544.41162109375
+    },
+    "r2diff_metrics": {
+      "latency_ms_mean": 111.4186445871989,
+      "latency_ms_std": 0.12200794969781198,
+      "energy_j_mean": 9.28,
+      "peak_mem_mb": 2660.0009765625
+    },
+    "psnr_baseline": -0.987470082432435,
+    "psnr_r2diff": -1.3030052580481062
+  },
+  "exp2": [
+    {
+      "sampler": "ddpm",
+      "steps": 30,
+      "psnr_baseline": -1.5030158487311949,
+      "psnr_r2": -1.5758415467412399
+    },
+    {
+      "sampler": "ddim",
+      "steps": 8,
+      "psnr_baseline": -0.909148011379156,
+      "psnr_r2": -1.392220975478137
+    },
+    {
+      "sampler": "ddim",
+      "steps": 15,
+      "psnr_baseline": -0.9004576353586929,
+      "psnr_r2": -1.426291657932957
+    },
+    {
+      "sampler": "dpmpp",
+      "steps": 15,
+      "psnr_baseline": -0.9301116018616724,
+      "psnr_r2": -1.4332267378658472
+    },
+    {
+      "sampler": "lcm",
+      "steps": 8,
+      "psnr_baseline": -0.8850797735903868,
+      "psnr_r2": -1.380095889425859
+    }
+  ],
+  "exp3": [
+    {
+      "config": "depth1_int8_learned",
+      "psnr": -1.3973969097836638,
+      "mse": 1.3795571327209473,
+      "flops": 1152000.0
+    },
+    {
+      "config": "depth2_int8_learned",
+      "psnr": -1.4002297204049496,
+      "mse": 1.3804572820663452,
+      "flops": 2036736.0
+    },
+    {
+      "config": "depth1_int4_learned",
+      "psnr": -1.3333699352287005,
+      "mse": 1.359367847442627,
+      "flops": 1152000.0
+    },
+    {
+      "config": "depth1_fp16_learned",
+      "psnr": -1.1908723864319288,
+      "mse": 1.3154890537261963,
+      "flops": 1152000.0
+    },
+    {
+      "config": "depth1_int8_manual",
+      "psnr": -1.352447934969261,
+      "mse": 1.3653525114059448,
+      "flops": 1152000.0
+    },
+    {
+      "config": "depth1_int8_scratch",
+      "psnr": -1.261120883493809,
+      "mse": 1.3369405269622803,
+      "flops": 1152000.0
+    }
+  ]
+}
+=== experiment end Thu Aug 28 09:41:15 UTC 2025 ===
