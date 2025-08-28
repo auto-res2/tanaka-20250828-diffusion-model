@@ -1,0 +1,9 @@
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11
+ERROR: Could not find a version that satisfies the requirement dvcore (from versions: none)
+ERROR: No matching distribution found for dvcore
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 4, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
