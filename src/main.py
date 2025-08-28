@@ -13,12 +13,14 @@ def load_config(path: str):
 
 def main():
     parser = argparse.ArgumentParser(description='ASTME Synthetic Experiments Runner')
-    parser.add_argument('--config', type=str, default='config/astme_synth.yaml', help='Path to YAML config')
+    parser.add_argument('--config', type=str, default='config/config.yaml', help='Path to YAML config')
     args = parser.parse_args()
 
     cfg = load_config(args.config)
     fast = bool(cfg.get('fast', True))
-    out_root = cfg.get('output_dir', '.research/iteration1/images')
+
+    # Force output directory as per requirement
+    out_root = '.research/iteration2/images'
 
     exp1_dir = os.path.join(out_root, 'exp1')
     exp2_dir = os.path.join(out_root, 'exp2')
