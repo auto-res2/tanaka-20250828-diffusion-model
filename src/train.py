@@ -4,6 +4,7 @@ import time
 import random
 from dataclasses import dataclass, asdict
 from typing import List, Tuple, Optional, Dict
+from contextlib import nullcontext
 
 import numpy as np
 import torch
@@ -293,9 +294,7 @@ class TinyRevUNet(nn.Module):
                 for _ in range(num_rev_per_stage):
                     f = ResidualBlock(ch // 2)
                     g = ResidualBlock(ch // 2)
-                    stage.append(RevBlock(_FuseHalves(f, first_half=True, ch=ch),
-                                          _FuseHalves(g, first_half=False, ch=ch),
-                                          slice_k=slice_k))
+                    stage.append(RevBlock(f, g, slice_k=slice_k))
             else:
                 for _ in range(num_rev_per_stage * 2):
                     stage.append(ResidualBlock(ch))
@@ -316,7 +315,7 @@ class TinyRevUNet(nn.Module):
                 for _ in range(num_rev_per_stage):
                     f = ResidualBlock(ch // 2)
                     g = ResidualBlock(ch // 2)
-                    stage.append(RevBlock(_FuseHalves(f, True, ch), _FuseHalves(g, False, ch), slice_k=slice_k))
+                    stage.append(RevBlock(f, g, slice_k=slice_k))
             else:
                 for _ in range(num_rev_per_stage * 2):
                     stage.append(ResidualBlock(ch))
@@ -444,7 +443,7 @@ def q_sample(x0: torch.Tensor, t: torch.Tensor, beta_min: float, beta_max: float
 
 
 def build_model(img_ch: int, cfg: TrainConfig) -> TinyRevUNet:
-    model = TinyRevUNet(in_ch=img_ch, out_ch=img_ch, channels=(32, 64), rev=cfg.rev, slice_k=cfg.slice_k, num_rev_per_stage=2)
+    model = TinyRevUNet(in_ch=img_ch, out_ch=img_ch, channels=(32, 32), rev=cfg.rev, slice_k=cfg.slice_k, num_rev_per_stage=2)
     if cfg.lora_rank > 0:
         inject_lora_conv2d(model, r=cfg.lora_rank, alpha=cfg.lora_rank, include_first_last=True, verbose=False)
         for n, p in model.named_parameters():
@@ -468,7 +467,8 @@ def diffusion_step(student: nn.Module, batch: Dict[str, torch.Tensor],
     B = x0.shape[0]
     t = torch.rand(B, device=x0.device)
     noisy, eps = q_sample(x0, t, beta_min, beta_max)
-    with torch.cuda.amp.autocast(enabled=(autocast_dtype is not None), dtype=autocast_dtype):
+    amp_ctx = torch.amp.autocast(device_type='cuda', enabled=(autocast_dtype is not None), dtype=autocast_dtype) if autocast_dtype is not None else nullcontext()
+    with amp_ctx:
         pred = student(noisy, offloader=offloader)
         mse = F.mse_loss(pred, eps)
         loss = mse
@@ -713,7 +713,7 @@ def gradcheck_revblock_small() -> bool:
     ch = 32
     f = ResidualBlock(ch // 2)
     g = ResidualBlock(ch // 2)
-    blk = RevBlock(_FuseHalves(f, True, ch), _FuseHalves(g, False, ch), slice_k=2)
+    blk = RevBlock(f, g, slice_k=2)
     blk.eval()
     blk.double()
     x = torch.randn(1, ch, 8, 8, dtype=torch.double, requires_grad=True)

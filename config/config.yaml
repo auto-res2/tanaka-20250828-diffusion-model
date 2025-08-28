@@ -2,7 +2,7 @@
 mode: quick  # options: quick, full
 
 paths:
-  images_dir: .research/iteration2/images
+  images_dir: .research/iteration3/images
   models_dir: models
 
 # For mode==full, toggle experiments individually
