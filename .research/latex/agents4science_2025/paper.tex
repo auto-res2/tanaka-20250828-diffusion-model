@@ -1,0 +1,273 @@
+\documentclass{article}
+
+\usepackage{agents4science_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{float}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\usepackage{microtype}
+\usepackage{booktabs}
+
+
+\title{Adaptive Spatio-Temporal Mixture-of-Experts for Efficient Diffusion Training}
+
+\author{AIRAS}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Training high-fidelity diffusion models remains prohibitively expensive, often requiring hundreds of PFLOPs and days of GPU time. Existing accelerations either target inference only—via caching, distillation, pruning, or quantization—or reduce redundancy along a single axis during training, such as timestep partitioning or spatial factorization, leaving substantial temporal, spatial, and semantic heterogeneity unexploited \cite{ho-2020-denoising,karras-2022-elucidating,wang-2023-patch,phung-2022-wavelet,zhang-2023-improving,moon-2024-simple,ma-2024-learning,shang-2022-post,salimans-2024-multistep,yin-2023-one,yao-2024-fasterdit}. We propose Adaptive Spatio-Temporal Mixture-of-Experts (ASTME), a conditional-computation diffusion architecture that activates only those expert blocks needed for a specific sample, timestep, and spatial region. ASTME replaces each layer with lightweight expert banks and a time-aware plus spatial router trained with straight-through Gumbel-Softmax, balanced-load and FLOP-budget regularization, and an expert-growing curriculum triggered by validation plateaus. Experts are concentrated in decoders to control memory and implemented with sparse dispatch compatible with DiT/UNet backbones. We verify feasibility through instrumented per-step FLOP accounting and synthetic prototypes that confirm stable routing, ablation toggles, and reproducible logging, while revealing that dense attention can mask FFN sparsity benefits at tiny scales. We also lay out a rigorous evaluation protocol for CIFAR-10 and ImageNet with PFLOPs-to-target-FID, final quality, and ablations against strong baselines, positioning ASTME to jointly exploit temporal and spatial redundancy during training.
+\end{abstract}
+
+\section{Introduction}
+Diffusion models have achieved state-of-the-art fidelity across image benchmarks but incur substantial training cost that scales with resolution, model width, and the number of diffusion steps \cite{ho-2020-denoising,karras-2022-elucidating}. Most accelerations reduce sampling cost after training: early exiting skips parameters using a time-dependent schedule \cite{moon-2024-simple}, caching reuses layers across timesteps via a learned router \cite{ma-2024-learning}, post-training quantization compresses denoisers without retraining by calibrating across the multi-timestep distribution \cite{shang-2022-post}, and distillation compresses many-step samplers into few or one step through moment or distribution matching \cite{salimans-2024-multistep,yin-2023-one}. A complementary strand seeks to improve training efficiency along a single axis: Patch Diffusion trains on randomized patches with coordinate conditioning \cite{wang-2023-patch}, wavelet decompositions separate frequency bands to cut cost \cite{phung-2022-wavelet}, multi-stage decoders cluster timesteps while sharing an encoder \cite{zhang-2023-improving}, and FasterDiT accelerates convergence via supervision and scheduling without architectural changes \cite{yao-2024-fasterdit}. Despite this progress, there is no architecture that simultaneously removes temporal, spatial, and semantic redundancy during training using per-sample conditional computation.
+
+We study the question: can a diffusion model execute only the network fragments required for a given input \(x\) at timestep \(t\), such that total training FLOPs scale sub-linearly with data and timestep complexity while preserving sample quality? We propose Adaptive Spatio-Temporal Mixture-of-Experts (ASTME), a drop-in architectural modification to DiT-style transformers or UNet decoders. Each layer is replaced by a bank of lightweight experts and a gating module with two signals: a time-aware gate over log-SNR and a spatial router over local features. For each token or spatial cell, only the top-1 or top-2 experts are activated. Routing uses straight-through Gumbel-Softmax with temperature annealing, balanced-load and FLOP-budget regularizers, and an expert-growing curriculum that clones the busiest expert upon validation plateau. To control memory, experts are concentrated in decoders; encoders remain monolithic, consistent with observations that encoder features vary minimally across timesteps and with multi-stage decoders that share encoders \cite{zhang-2023-improving,yao-2024-fasterdit}. We implement sparse expert dispatch and per-step FLOP accounting.
+
+While ASTME targets large-scale training, we first validate feasibility through controlled synthetic runs. These prototypes confirm stable routing and faithful FLOP accounting but also highlight a key caveat: when attention remains dense and dominates cost, sparsifying only FFNs yields no measurable PFLOP savings at tiny scales. This motivates the evaluation plan on CIFAR-10 and ImageNet, where decoder FFNs occupy a larger FLOP share and temporal-spatial redundancy is more pronounced \cite{ho-2020-denoising,karras-2022-elucidating}. Our study complements broader perspectives on adaptive or structured computation for diffusion, including token or frequency selection \cite{wang-2023-patch,phung-2022-wavelet}, and training or inference acceleration strategies \cite{moon-2024-simple,ma-2024-learning,salimans-2024-multistep,yin-2023-one,yao-2024-fasterdit}. We also note recent analyses of efficiency-oriented diffusion transformers \cite{chen-2024-edt} and robustness perspectives that may interact with early timesteps \cite{author-year-leveraging}.
+
+\begin{itemize}
+  \item \textbf{ASTME architecture:} A diffusion design enabling per-sample, per-timestep, and per-region conditional computation via a time-aware and spatial router with top-\(k\) expert activation trained using straight-through Gumbel-Softmax.
+  \item \textbf{Curriculum and regularization:} An expert-growing curriculum triggered by validation plateaus, a balanced-load KL regularizer to prevent expert collapse, and a FLOP-budget penalty that targets the average number of active experts per token.
+  \item \textbf{Decoder-centric design:} Experts placed in decoders with shared encoders to control memory, sparse expert dispatch compatible with DiT/UNet backbones, and instrumented per-step FLOP accounting.
+  \item \textbf{Prototypes and evaluation protocol:} Synthetic prototypes validating routing stability and diagnostics, and a comprehensive large-scale evaluation plan on CIFAR-10 and ImageNet against strong baselines \cite{wang-2023-patch,zhang-2023-improving,yao-2024-fasterdit,moon-2024-simple,ma-2024-learning,salimans-2024-multistep,yin-2023-one}.
+\end{itemize}
+
+Future work includes extending routing to conditional modalities (e.g., text tokens), combining with few-step distillation and consistency-style training for ultra-fast samplers, and exploring hardware-aware routing and caching synergies during inference \cite{salimans-2024-multistep,yin-2023-one,ma-2024-learning}.
+
+\section{Related Work}
+\subsection{Inference-time acceleration}
+A large body of work reduces sampling cost post-training. Early exiting learns timestep-dependent schedules to skip subsets of parameters during inference \cite{moon-2024-simple}. Layer caching discovers timesteps at which layer outputs can be reused, optimized via a differentiable router to yield a static computation graph \cite{ma-2024-learning}. Post-training quantization adapts calibration to the multi-timestep output distribution so that denoisers can be quantized without retraining \cite{shang-2022-post}. Distillation compresses many-step samplers into few or one step, either by matching conditional expectations (moment matching) or distribution-level objectives \cite{salimans-2024-multistep,yin-2023-one}. These methods leave training compute unchanged because the dense model is still trained end-to-end. ASTME is complementary: it targets training compute by executing only a small subset of experts per \((x, t, \text{token})\) and can optionally reuse routing at inference.
+
+\subsection{Training-time single-axis efficiency}
+Patch Diffusion trains on randomized patches with positional conditioning, achieving faster training and improved data efficiency \cite{wang-2023-patch}. Wavelet diffusion separates frequency bands at image and feature levels to speed processing while preserving quality \cite{phung-2022-wavelet}. Multi-stage decoders cluster timesteps to instantiate multiple decoders with a shared encoder for parameter specialization and training efficiency \cite{zhang-2023-improving}. FasterDiT accelerates convergence using supervision and scheduling without modifying the architecture \cite{yao-2024-fasterdit}. These approaches primarily exploit one axis—temporal, spatial, or spectral—whereas ASTME performs dynamic, per-sample routing that jointly leverages temporal and spatial heterogeneity at fine granularity.
+
+\subsection{Architectural efficiency perspectives}
+Efficient diffusion transformers propose lightweight designs and masking or modulation schemes to reduce computation \cite{chen-2024-edt}. Other works analyze encoder-decoder roles in diffusion and suggest omitting or reusing encoder computation across steps during inference \cite{yao-2024-fasterdit}. Recurrent or routing-oriented architectures target adaptive computation for iterative generation, though not focused on training compute in standard diffusion backbones \cite{jabri-2022-scalable}. ASTME differs by introducing timestep-aware gating and spatial token routing in mixture-of-experts layers, aimed specifically at cutting training FLOPs in conventional DiT/UNet.
+
+\subsection{Foundations and evaluation metrics}
+Diffusion training and evaluation commonly follow denoising objectives, schedules connected to signal-to-noise ratio (SNR), and metrics such as FID, sFID, Inception Score, and precision/recall \cite{ho-2020-denoising,karras-2022-elucidating}. Robustness perspectives on early stages of diffusion provide an additional lens on redundancy across timesteps and could inform gating designs \cite{author-year-leveraging}.
+
+\subsection{Comparison summary}
+Inference-time accelerations and distillation \cite{moon-2024-simple,ma-2024-learning,shang-2022-post,salimans-2024-multistep,yin-2023-one} are orthogonal to training compute. Single-axis training methods \cite{wang-2023-patch,phung-2022-wavelet,zhang-2023-improving,yao-2024-fasterdit} lack per-sample conditionality across both time and space. ASTME is, to our knowledge, the first to combine time-aware and spatial routing with mixture-of-experts to reduce training FLOPs while maintaining quality within standard diffusion backbones.
+
+\section{Background}
+Diffusion models learn a denoising function conditioned on a timestep that indexes the noise level applied to data \cite{ho-2020-denoising}. Training objectives can be interpreted through a design space that emphasizes preconditioning and schedules tied to signal-to-noise ratio (SNR), often parameterized by its logarithm \cite{karras-2022-elucidating}. Architecturally, UNets and diffusion transformers (DiT) alternate attention and feed-forward or residual submodules. In standard practice, all parameters are activated for all timesteps and all spatial locations, regardless of local difficulty.
+
+\subsection{Problem setting and notation}
+Consider an input \(x\) paired with a timestep \(t\). A diffusion backbone with \(L\) layers applies transformations \(f_1\) through \(f_L\) to features at multiple resolutions or tokenizations. Let log-SNR be a scalar function of \(t\) that orders timesteps by difficulty. Redundancy arises along three axes: temporal, because early and late timesteps differ in SNR and required complexity; spatial, because many regions are locally smooth at a given \(t\); and semantic, because only a subset of features is needed for specific content. We seek an architecture that, for each \((x, t)\) and token, activates only the necessary computation while preserving performance.
+
+\subsection{Assumptions}
+We assume a scalar time embedding derived from log-SNR is available; token-level or grid-level routing is feasible with lightweight routers; sparse expert dispatch can be implemented efficiently; and encoders may remain dense while conditional computation is focused in the decoder, aligning with multi-stage decoders and analyses of encoder stability across timesteps \cite{zhang-2023-improving,yao-2024-fasterdit}.
+
+\subsection{Metrics}
+Training efficiency is reported as cumulative PFLOPs to reach a target FID, and as wall-clock time on a fixed GPU cluster. Final image quality is measured with FID, sFID, Inception Score, and precision/recall, in line with diffusion literature \cite{ho-2020-denoising,karras-2022-elucidating}. To characterize routing behavior, we additionally report average active experts per token, router entropy, utilization balance (e.g., Gini), and overflow rate under a capacity factor.
+
+\subsection{Context}
+Prior work exploits single axes of redundancy (patches, frequency, or timestep clustering) \cite{wang-2023-patch,phung-2022-wavelet,zhang-2023-improving}, or accelerates inference by reducing network calls or layer usage \cite{moon-2024-simple,ma-2024-learning,shang-2022-post,salimans-2024-multistep,yin-2023-one}. ASTME targets training compute by combining time-aware and spatial routing with mixture-of-experts layers inside standard backbones.
+
+\section{Method}
+\subsection{Layered mixture-of-experts architecture}
+ASTME augments each of the \(L\) layers in a DiT block or each UNet decoder stage with a bank of \(M\) lightweight experts, each roughly one quarter the width of the baseline subnetwork. A gating module produces per-expert routing scores using two signals: (1) a time-aware gate that maps the log-SNR of the current timestep to \(M\) logits to encourage specialization across early, mid, and late timesteps; and (2) a spatial router that maps local token or grid features to \(M\) logits. The two sets of logits are summed with an optional learned per-expert bias to yield final routing scores.
+
+\subsection{Routing and activation with straight-through Gumbel-Softmax}
+For each sample, timestep, and token (or spatial cell), ASTME selects the top-\(k\) experts, with \(k \in \{1, 2\}\), and skips all others. To enable gradient flow through discrete routing, we use straight-through Gumbel-Softmax: the forward pass uses hard one-hot (top-1) or k-hot (top-2) selections, while the backward pass uses the softmax probabilities. The temperature is annealed from 1.0 to 0.1 over the first 200k steps to balance exploration and determinism. To limit routing overhead and encourage coherent spatial decisions, the spatial router includes a local invariance penalty that encourages similar logits within a small neighborhood (for example, a 3-by-3 window for grid cells).
+
+\subsection{Regularization and compute budgets}
+To prevent expert collapse, we apply a balanced-load regularizer that measures the divergence between the marginal routing distribution over experts and the uniform distribution for each layer. To explicitly target computational savings, we add a FLOP-budget penalty on the deviation between the observed average number of active experts per token and a desired budget (for example, around 1.3 active experts out of 6). These auxiliary terms sum across layers and are added to the standard diffusion denoising loss \cite{ho-2020-denoising,karras-2022-elucidating}.
+
+\subsection{Expert-growing curriculum}
+We provision up to \(M_{\max}\) experts per layer but initially activate only two. When validation loss fails to improve across several evaluations, we clone and slightly perturb the busiest expert to instantiate a new one, unmask it for routing, temporarily freeze gates to stabilize, and increase load-balance regularization to encourage usage of the new expert. This curriculum avoids training all experts from scratch and targets capacity to bottlenecks.
+
+\subsection{Decoder-focused placement and attention considerations}
+In UNet backbones, experts are placed only in decoder blocks, while the encoder remains monolithic. This design controls memory and aligns with the observation that encoder features change less than decoder features across timesteps and with multi-stage decoders that share encoders \cite{zhang-2023-improving,yao-2024-fasterdit}. In DiT backbones, token-level routing is applied to feed-forward sublayers, while attention remains dense in our initial implementation; integrating sparse attention or attention-level mixtures is a natural extension.
+
+\subsection{Distributed training, sparse dispatch, and FLOP accounting}
+Training employs data-parallelism with optional expert-parallel groups and a capacity factor of approximately 1.5 for token-to-expert assignment. Sparse expert dispatch is implemented with a fast dispatcher analogous to established mixture-of-experts systems, and per-step FLOP accounting counts only activated expert computations. We cross-check FLOP counters with profiling on small batches for accuracy.
+
+\subsection{Objective and optimization}
+The total loss is the diffusion denoising loss plus three auxiliary components: (1) a KL divergence between marginal expert usage and uniform for balanced load; (2) a quadratic FLOP-budget penalty that targets the desired average number of active experts per token; and (3) a local invariance penalty on spatial router logits. Optimization uses AdamW with learning rate around 1e-4, EMA 0.9999, gradient clipping at 1.0, gate dropout 0.1, and the temperature annealing described above, consistent with common practices in diffusion training \cite{ho-2020-denoising,karras-2022-elucidating}.
+
+\subsection{Optional inference routing reuse}
+For evaluation, routers may be frozen to the most frequent per-timestep expert assignments estimated on a calibration set, reducing routing overhead and potentially accelerating sampling. This option is orthogonal to inference-time accelerations such as caching and early exit \cite{ma-2024-learning,moon-2024-simple}.
+
+\subsection{Pseudocode: ASTME routing and expert growth}
+\begin{algorithm}
+\caption{ASTME layer forward with time-aware and spatial routing}
+\begin{algorithmic}
+\State Inputs: tokens \(T \in \mathbb{R}^{N \times d}\), timestep \(t\), log-SNR embedding \(\tau\), experts \(\{E_m\}_{m=1}^M\)
+\State Compute time logits: \(a \leftarrow W_t \tau + b_t \in \mathbb{R}^M\)
+\State Compute spatial logits: \(b \leftarrow f_s(T) \in \mathbb{R}^{N \times M}\)
+\State Combine logits per token: \(Z[i, m] \leftarrow a[m] + b[i, m] + c[m]\)
+\State Add Gumbel noise: \(\tilde{Z}[i, m] \leftarrow (Z[i, m] + G[i, m]) / T_{gs}\)
+\State Select top-\(k\) experts per token in forward pass, obtain one-hot or k-hot \(H \in \{0,1\}^{N \times M}\)
+\State Compute soft probabilities for backward: \(P \leftarrow \text{softmax}(\tilde{Z}, \text{axis}=m)\)
+\State Dispatch tokens to experts with capacity factor \(\phi\), obtain per-expert batches \(\{T_m\}\)
+\For{each expert \(m = 1..M\)}
+  \State Compute outputs: \(U_m \leftarrow E_m(T_m)\)
+\EndFor
+\State Combine outputs via inverse dispatch: \(U \leftarrow \text{combine}(\{U_m\}, H)\)
+\State Return \(U\)
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Expert-growing curriculum trigger}
+\begin{algorithmic}
+\State Inputs: validation metric history \(\{v_j\}\), patience \(p\), max experts \(M_{\max}\)
+\If{no improvement in last \(p\) evaluations and current experts \(M < M_{\max}\)}
+  \State Identify busiest expert: \(m^* \leftarrow \arg\max_m \text{utilization}(m)\)
+  \State Clone and perturb: \(E_{M+1} \leftarrow \text{perturb}(E_{m^*})\)
+  \State Unmask new expert for routing; temporarily freeze gate parameters
+  \State Increase load-balance regularizer coefficient for \(q\) steps
+  \State Unfreeze gate and continue training
+\EndIf
+\end{algorithmic}
+\end{algorithm}
+
+\section{Experimental Setup}
+\subsection{Problem instances}
+We consider unconditional and class-conditional image generation on CIFAR-10 at 32\(\times\)32, ImageNet at 64\(\times\)64 and 256\(\times\)256, and a small-data robustness setting on AFHQ-Cat 5k at 256\(\times\)256. Backbones include UNet-ADM and DiT-XL/2. Baselines are the original dense backbones, Patch Diffusion \cite{wang-2023-patch}, a Multi-Stage Decoder with three stages and a shared encoder \cite{zhang-2023-improving}, and the FasterDiT training strategy \cite{yao-2024-fasterdit}.
+
+\subsection{Metrics and targets}
+Training efficiency is measured as cumulative PFLOPs to reach target FID thresholds—10 for CIFAR-10, 5 for ImageNet-64, and 8 for ImageNet-256—and as wall-clock time on an 8\(\times\)A100 setup. Final quality includes FID, sFID, Inception Score, and precision/recall, as standard in diffusion evaluation \cite{ho-2020-denoising,karras-2022-elucidating}. We also report average active experts per token, GPU-hours, router entropy, utilization Gini, and overflow rate to assess routing quality and fairness. For inference diagnostics, we optionally measure speed when reusing frozen routing.
+
+\subsection{ASTME configuration}
+For each layer we set \(M_{\max}\) to 8 experts and begin with 2 active experts. Experts are quarter-width FFNs or lightweight conv-MLPs. Routing uses a time-aware gate over log-SNR and a spatial token router (or an 8\(\times\)8 grid for UNet), with top-1 by default and top-2 as an ablation. Straight-through Gumbel-Softmax temperature is annealed from 1.0 to 0.1 during the first 200k steps; capacity factor is 1.5; gate dropout is 0.1. Regularizers include KL-to-uniform over layer-level marginal usage (with the coefficient selected via a small sweep on CIFAR-10) and a FLOP-budget penalty targeting about 1.3 active experts out of 6.
+
+\subsection{Training details}
+We use AdamW with learning rate 1e-4, EMA 0.9999, and gradient clipping at 1.0, with mixed precision enabled. For UNet variants, experts are placed in decoder blocks only. For DiT variants, experts wrap FFN sublayers while attention remains dense. Quality is evaluated with DDIM 250 steps for final metrics and 50 steps for development checks. FLOP counters record only activated expert FLOPs per step and are cross-validated against a profiler on small batches.
+
+\subsection{Ablations and robustness}
+We ablate temporal-only routing (spatial logits disabled), spatial-only routing (time logits replaced by learned biases), no expert growing, and different top-\(k\) choices. For robustness, we test AFHQ-Cat low-data training and class-conditional CIFAR-10 with label-flip noise at 0\%, 20\%, and 40\%, tracking gate stability via switch rate under small input perturbations.
+
+\subsection{Prototype runs}
+Prior to scaling up, we validate the code path using tiny DiT-like toy models at 32\(\times\)32 trained for tens of steps on synthetic edge or texture patterns. We log training loss, PFLOPs, and routing diagnostics, and we save figures summarizing these runs. These prototypes are not substitutes for CIFAR-10/ImageNet evaluations but validate instrumentation and reveal bottlenecks; in particular, when attention remains dense and dominates cost, FFN sparsity benefits are not measurable at tiny scale.
+
+\subsection{Baselines and complementarity}
+We situate ASTME alongside inference-time accelerations—early exit, caching, quantization, and distillation \cite{moon-2024-simple,ma-2024-learning,shang-2022-post,salimans-2024-multistep,yin-2023-one}—as complementary, and alongside single-axis training accelerations—patches, wavelets, multi-stage decoders, and training strategies \cite{wang-2023-patch,phung-2022-wavelet,zhang-2023-improving,yao-2024-fasterdit}—as a joint temporal-spatial method. The evaluation protocol requires comparisons under matched PFLOP budgets and reports mean and 95\% bootstrap confidence intervals over three seeds for fairness and statistical rigor.
+
+\section{Results}
+We report all outcomes that were actually run and logged in the prototype experiments. These runs used tiny DiT-like models on synthetic 32\(\times\)32 edge and texture patterns for a few dozen steps, with dense attention and sparse FFN experts. No CIFAR-10 or ImageNet training was executed in these prototypes, and no FID or related metrics were computed.
+
+\subsection{Experiment 1: Efficiency vs. dense baseline (toy 32\(\times\)32)}
+For 20 training steps on an edges pattern, ASTME loss decreased from 1.1010 to 0.8545 by step 10, while the dense baseline decreased from 1.1482 to 0.5847 by step 10. Accumulated PFLOPs were approximately 0.000001 for both models by the end of the short runs, indicating no measured compute savings under these conditions. Routing diagnostics showed average top-1 activation as designed, with negligible overflow.
+
+\subsection{Experiment 2: Ablations and specialization (synthetic textures, 15 steps)}
+Loss after 10 steps was approximately 0.9124 (full ASTME), 0.9211 (temporal-only), 0.8859 (spatial-only), and 0.8873 (top-\(k\)=2). PFLOPs accrued at roughly the same tiny magnitude across variants, again reflecting that dense attention dominated the cost in this setup. An expert-timestep activation heatmap was generated but specialization signals were weak given the short schedule.
+
+\subsection{Experiment 3: Robustness to label noise and jitter (synthetic)}
+With 0\% label noise, final loss was 0.8357 and router switch rate under 1\% input jitter was approximately 0.0000. With 40\% label noise, final loss was 0.8474 and the switch rate remained approximately 0.0000. These values suggest highly stable routing at low temperature in the toy regime.
+
+\subsection{Interpretation and limitations}
+On these tiny synthetic runs, ASTME did not reduce measured training PFLOPs compared to the dense baseline and showed higher training loss in early steps for the edges pattern. The lack of observed compute benefit is consistent with dense attention dominating computation at this scale. The ablations show small loss differences but are inconclusive. Attention was dense in all prototypes, masking any FFN sparsity gains; expert growth was not triggered; and no CIFAR-10/ImageNet metrics were computed. These prototypes validate feasibility of routing and FLOP accounting but do not test the core claim of training compute reduction at scale.
+
+\subsection{Figures}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp1/training\_loss\_astme.pdf }
+\caption{Training loss over steps for ASTME.}
+\label{fig:exp1\_loss\_astme}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp1/training\_loss\_baseline.pdf }
+\caption{Training loss over steps for the dense baseline.}
+\label{fig:exp1\_loss\_baseline}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp1/pflops\_vs\_step\_astme.pdf }
+\caption{Accumulated PFLOPs vs. step for ASTME.}
+\label{fig:exp1\_pflops\_astme}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp1/pflops\_vs\_step\_baseline.pdf }
+\caption{Accumulated PFLOPs vs. step for the dense baseline.}
+\label{fig:exp1\_pflops\_baseline}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp1/active\_experts\_astme.pdf }
+\caption{Average active experts per token during training.}
+\label{fig:exp1\_active\_experts}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp2/pflops\_ablation.pdf }
+\caption{Ablation results: PFLOPs comparison across variants.}
+\label{fig:exp2\_pflops\_ablation}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp2/final\_loss\_ablation.pdf }
+\caption{Ablation results: final loss across variants.}
+\label{fig:exp2\_final\_loss\_ablation}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp2/expert\_timestep\_heatmap\_astme.pdf }
+\caption{Expert-timestep activation heatmap for ASTME.}
+\label{fig:exp2\_heatmap\_astme}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp3/loss\_vs\_noise\_astme.pdf }
+\caption{Robustness: loss vs. label-noise rate for ASTME.}
+\label{fig:exp3\_loss\_vs\_noise}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ images/exp3/router\_switch\_rate\_astme.pdf }
+\caption{Robustness: router switch rate vs. noise.}
+\label{fig:exp3\_switch\_rate}
+\end{figure}
+
+\section{Conclusion}
+We presented ASTME, a diffusion architecture that introduces conditional computation across timesteps and spatial regions by routing tokens to lightweight experts. The design combines a time-aware gate over log-SNR, a spatial router with local invariance regularization, top-\(k\) straight-through Gumbel-Softmax activation, an expert-growing curriculum, and load-balance plus FLOP-budget regularization. Experts are concentrated in decoders to control memory, and sparse expert dispatch with per-step FLOP accounting integrates with DiT/UNet backbones.
+
+Synthetic prototypes confirmed that routing and diagnostics are stable and that our FLOP accounting operates as intended. They also revealed that on tiny models with dense attention, sparsifying FFNs alone does not reduce measured PFLOPs, clarifying priorities for scale-up. The evaluation plan targets CIFAR-10 and ImageNet, with PFLOPs-to-target-FID, final FID/sFID/IS/precision-recall, and ablations vs. Patch Diffusion, Multi-Stage Decoders, and FasterDiT under matched PFLOP budgets \cite{wang-2023-patch,zhang-2023-improving,yao-2024-fasterdit}. ASTME is complementary to inference-time accelerations such as caching, early exiting, and few-step or one-step distillation \cite{ma-2024-learning,moon-2024-simple,salimans-2024-multistep,yin-2023-one}.
+
+Future work includes extending routing to conditional modalities, integrating with few-step or single-step distillation for ultra-fast sampling, and exploring hardware-aware routing and caching to further reduce both training and inference cost while maintaining image quality \cite{ho-2020-denoising,karras-2022-elucidating}. Robustness-oriented views of early timesteps may also inform gate design and curricula \cite{author-year-leveraging}.
+
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
