@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/main.py", line 7, in <module>
+    from .evaluate import experiment1, experiment2, experiment3
+  File "/home/runner/work/tanaka-20250828-diffusion-model/tanaka-20250828-diffusion-model/src/evaluate.py", line 203, in <module>
+    sched: DiffusionSchedule, cond_vecs: torch.Tensor,
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'DiffusionSchedule' is not defined
